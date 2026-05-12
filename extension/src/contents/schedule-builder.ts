@@ -232,7 +232,7 @@ function findProfessorElements(): Map<string, HTMLElement[]> {
   }
 
   if (DEBUG && nameMap.size > 0) {
-    console.log("[ProfLens] Found professors:", Array.from(nameMap.keys()))
+    console.log("[RaiderRating] Found professors:", Array.from(nameMap.keys()))
   }
 
   return nameMap
@@ -252,7 +252,7 @@ async function injectRatings() {
   if (nameMap.size === 0) return
 
   const names = Array.from(nameMap.keys())
-  if (DEBUG) console.log("[ProfLens] Looking up:", names)
+  if (DEBUG) console.log("[RaiderRating] Looking up:", names)
 
   try {
     const response: BatchLookupResponse = await sendToBackground({
@@ -289,7 +289,7 @@ async function injectRatings() {
       }
     }
   } catch (err) {
-    console.error("[ProfLens] Injection error:", err)
+    console.error("[RaiderRating] Injection error:", err)
   }
 }
 
@@ -326,4 +326,4 @@ storage.watch({
   }
 })
 
-if (DEBUG) console.log("[ProfLens] Content script loaded, watching for professor names...")
+if (DEBUG) console.log("[RaiderRating] Content script loaded, watching for professor names...")

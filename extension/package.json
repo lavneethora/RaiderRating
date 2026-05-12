@@ -1,6 +1,6 @@
 {
   "name": "proflens-extension",
-  "displayName": "ProfLens",
+  "displayName": "RaiderRating",
   "version": "0.1.0",
   "description": "See Rate My Professors ratings directly in TTU Schedule Builder",
   "scripts": {
