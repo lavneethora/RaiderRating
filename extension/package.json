@@ -1,0 +1,32 @@
+{
+  "name": "proflens-extension",
+  "displayName": "ProfLens",
+  "version": "0.1.0",
+  "description": "See Rate My Professors ratings directly in TTU Schedule Builder",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build"
+  },
+  "dependencies": {
+    "@plasmohq/messaging": "^0.7.2",
+    "@plasmohq/storage": "^1.15.0",
+    "plasmo": "^0.90.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.315",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.6",
+    "typescript": "^5.8.3"
+  },
+  "manifest": {
+    "permissions": [
+      "storage"
+    ],
+    "host_permissions": [
+      "https://schedulebuilder.ttu.edu/*",
+      "https://proflens-api-production.up.railway.app/*"
+    ]
+  }
+}
