@@ -45,28 +45,6 @@ RaiderRating/
 - Injects color-coded rating badges inline
 - Toggle on/off from the popup
 
-## Development
-
-### Backend
-
-```bash
-cd api
-npm install
-npm run dev
-```
-
-Runs on `http://localhost:3001`
-
-### Extension
-
-```bash
-cd extension
-npm install
-npx plasmo dev
-```
-
-Load the extension in Chrome: `chrome://extensions` → Developer Mode → Load Unpacked → select `extension/build/chrome-mv3-dev/`
-
 ## Privacy
 
 RaiderRating does not collect any personal data. It only reads professor names already displayed on the schedule builder page and fetches publicly available ratings. See our [Privacy Policy](https://lavneethora.github.io/RaiderRating/privacy-policy.html).
