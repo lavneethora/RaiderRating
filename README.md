@@ -4,6 +4,10 @@ A Chrome extension that displays Rate My Professors ratings directly inside the 
 
 No more switching tabs during registration — see professor ratings, difficulty scores, and "would take again" percentages right next to their names.
 
+## Install
+
+[**Get RaiderRating on the Chrome Web Store**](https://chromewebstore.google.com/detail/raiderrating/mfkadoinfgjghmfooigphelfpdicdfek)
+
 ## How It Works
 
 1. Install the extension from the Chrome Web Store
