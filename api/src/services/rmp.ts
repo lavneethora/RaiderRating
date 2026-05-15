@@ -60,15 +60,26 @@ interface SearchResponse {
   }
 }
 
-function matchesName(node: RMPTeacherNode, firstName: string, lastName: string): boolean {
-  const nodeFirst = node.firstName.toLowerCase()
-  const nodeLast = node.lastName.toLowerCase()
-  const queryFirst = firstName.toLowerCase()
-  const queryLast = lastName.toLowerCase()
+function scoreMatch(node: RMPTeacherNode, firstName: string, lastName: string): number {
+  const nodeFirst = node.firstName.toLowerCase().trim()
+  const nodeLast = node.lastName.toLowerCase().trim()
+  const queryFirst = firstName.toLowerCase().trim()
+  const queryLast = lastName.toLowerCase().trim()
 
-  if (nodeLast !== queryLast) return false
-  if (!queryFirst) return true
-  return nodeFirst.startsWith(queryFirst) || queryFirst.startsWith(nodeFirst)
+  // Last name must match exactly
+  if (nodeLast !== queryLast) return 0
+
+  // No first name provided — last name match only
+  if (!queryFirst) return 1
+
+  // Exact first name match
+  if (nodeFirst === queryFirst) return 3
+
+  // First name initial match (e.g., "H" matches "Hamed")
+  if (queryFirst.length === 1 && nodeFirst.startsWith(queryFirst)) return 2
+
+  // No match
+  return 0
 }
 
 export async function searchProfessor(
@@ -85,8 +96,22 @@ export async function searchProfessor(
   const edges = data.newSearch.teachers.edges
   if (!edges.length) return null
 
-  const match = edges.find(e => matchesName(e.node, firstName, lastName)) || edges[0]
-  const node = match.node
+  // Score all results and pick the best match
+  let bestScore = 0
+  let bestNode: RMPTeacherNode | null = null
+
+  for (const edge of edges) {
+    const score = scoreMatch(edge.node, firstName, lastName)
+    if (score > bestScore) {
+      bestScore = score
+      bestNode = edge.node
+    }
+  }
+
+  // No match found — don't return a random professor
+  if (!bestNode) return null
+
+  const node = bestNode
 
   return {
     name: `${node.firstName} ${node.lastName}`,
