@@ -275,13 +275,16 @@ async function injectRatings() {
           Object.assign(badge.style, {
             display: "inline-block",
             marginLeft: "6px",
-            padding: "2px 6px",
+            padding: "2px 8px",
             borderRadius: "4px",
-            fontSize: "10px",
-            background: "#eee",
-            color: "#999",
+            fontSize: "11px",
+            fontWeight: "600",
+            whiteSpace: "nowrap",
+            background: "#9E9E9E",
+            color: "#fff",
             fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif",
             verticalAlign: "middle",
+            lineHeight: "1.4",
           })
           badge.textContent = "Not on RMP"
           elem.appendChild(badge)
