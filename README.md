@@ -34,6 +34,8 @@ When grade data is available for that **specific professor + course combination*
 
 If grade data isn't available for that combination, the button simply isn't shown — the popup looks exactly like the original ratings-only version.
 
+> **Note:** Grade distribution data currently covers most undergraduate courses. Graduate-level courses will be added in a future update.
+
 ## Project Structure
 
 ```
