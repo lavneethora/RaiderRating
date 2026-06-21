@@ -40,3 +40,48 @@ export interface RMPTeacherNode {
   numRatings: number
   wouldTakeAgainPercent: number
 }
+
+export interface GradeCounts {
+  A: number
+  B: number
+  C: number
+  D: number
+  F: number
+  I: number
+  CR: number
+  P: number
+  NC: number
+  PR: number
+  W: number
+  O: number
+}
+
+export interface GradeSemester extends GradeCounts {
+  semester: string
+  total: number
+}
+
+export interface GradeEntry {
+  instructor: string
+  course: string
+  overall: GradeCounts
+  bySemester: GradeSemester[]
+}
+
+export interface GradeLookupResult {
+  found: boolean
+  entry: GradeEntry | null
+}
+
+export interface GradeBatchRequestItem {
+  professor: string
+  course: string
+}
+
+export interface GradeBatchRequest {
+  requests: GradeBatchRequestItem[]
+}
+
+export interface GradeBatchResponse {
+  results: Record<string, GradeLookupResult>
+}

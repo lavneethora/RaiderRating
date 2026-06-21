@@ -4,3 +4,13 @@ build/
 .env
 .plasmo/
 .DS_Store
+
+__pycache__/
+*.pyc
+venv/
+
+# Local-only scraper tooling — not part of the published API/extension repo
+scripts/
+
+# TS incremental build artifact
+*.tsbuildinfo

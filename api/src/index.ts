@@ -4,6 +4,7 @@ import cors from 'cors'
 import rateLimit from 'express-rate-limit'
 import { requestLogger } from './utils/logger'
 import professorRoutes from './routes/professors'
+import gradeRoutes from './routes/grades'
 import { clearCache, getCacheStats } from './services/cache'
 
 const app = express()
@@ -25,6 +26,7 @@ app.get('/health', (_req, res) => {
 })
 
 app.use('/api/professors', professorRoutes)
+app.use('/api/grades', gradeRoutes)
 
 function requireAdminKey(req: import('express').Request, res: import('express').Response, next: import('express').NextFunction) {
   const key = process.env.ADMIN_API_KEY
