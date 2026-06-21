@@ -61,7 +61,7 @@ function IndexPopup() {
         <div style={logoStyle}>RR</div>
         <div>
           <div style={{ fontSize: 18, fontWeight: 700, color: "#333" }}>RaiderRating</div>
-          <div style={{ fontSize: 12, color: "#888" }}>v0.1.0</div>
+          <div style={{ fontSize: 12, color: "#888" }}>v{chrome.runtime.getManifest().version}</div>
         </div>
       </div>
 
