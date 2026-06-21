@@ -225,7 +225,7 @@ function showTooltip(
     gradeBtn.addEventListener("click", (e) => {
       e.stopPropagation()
       e.preventDefault()
-      showGradeModal(anchor, prof, courseCode, gradeEntry)
+      showGradeModal(anchor, prof.name, courseCode, gradeEntry)
     })
     tooltip.appendChild(gradeBtn)
   }
@@ -309,7 +309,7 @@ function buildGradeChart(counts: import("~lib/types").GradeCounts, total: number
 
 function showGradeModal(
   anchor: HTMLElement,
-  prof: ProfessorRating,
+  displayName: string,
   courseCode: string,
   gradeEntry: GradeEntry,
 ) {
@@ -341,7 +341,7 @@ function showGradeModal(
     marginBottom: "12px",
   })
   const title = el("div", { display: "flex", flexDirection: "column" })
-  title.appendChild(el("div", { fontWeight: "700", fontSize: "14px" }, prof.name))
+  title.appendChild(el("div", { fontWeight: "700", fontSize: "14px" }, displayName))
   title.appendChild(el("div", { color: "#666", fontSize: "12px" }, courseCode))
   header.appendChild(title)
   const closeBtn = document.createElement("button")
@@ -537,6 +537,7 @@ async function injectRatings() {
         } else if (result && !result.found) {
           const badge = document.createElement("span")
           badge.setAttribute(BADGE_ATTR, "true")
+          const clickable = !!(course && gradeEntry)
           Object.assign(badge.style, {
             display: "inline-block",
             marginLeft: "6px",
@@ -550,8 +551,19 @@ async function injectRatings() {
             fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif",
             verticalAlign: "middle",
             lineHeight: "1.4",
+            cursor: clickable ? "pointer" : "default",
           })
-          badge.textContent = "Not on RMP"
+          badge.textContent = clickable ? "Not on RMP · 📊 Grades" : "Not on RMP"
+          if (clickable) {
+            const safeCourse = course as string
+            const safeGrade = gradeEntry as GradeEntry
+            const displayName = safeGrade.instructor || name
+            badge.addEventListener("click", (e) => {
+              e.stopPropagation()
+              e.preventDefault()
+              showGradeModal(badge, displayName, safeCourse, safeGrade)
+            })
+          }
           elem.appendChild(badge)
         }
       }
