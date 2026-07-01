@@ -2,6 +2,10 @@
 
 All notable changes to RaiderRating.
 
+## v1.3 — 2026-06-21
+
+- **New:** "Problem/Suggestions: Contact Us" link in the extension popup for user feedback.
+
 ## v1.2 — 2026-06-21
 
 - **New:** Grade distribution viewer. Click the orange "📊 View Grade Distribution" button on a rating popup to see the A/B/C/D/F/W breakdown for that specific professor + course combination, across the most recent semesters.
