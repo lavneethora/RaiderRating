@@ -29,9 +29,14 @@ const logoStyle: React.CSSProperties = {
   fontSize: 16,
 }
 
+const footerStyle: React.CSSProperties = {
+  fontSize: 11,
+  color: "#aaa",
+  textAlign: "center",
+}
+
 function IndexPopup() {
   const [enabled, setEnabled] = useState(true)
-  const [cacheCleared, setCacheCleared] = useState(false)
 
   useEffect(() => {
     storage.get<boolean>("enabled").then((val) => {
@@ -43,16 +48,6 @@ function IndexPopup() {
     const next = !enabled
     setEnabled(next)
     await storage.set("enabled", next)
-  }
-
-  const handleClearCache = async () => {
-    try {
-      await fetch("https://proflens-api-production.up.railway.app/api/cache/clear", { method: "POST" })
-      setCacheCleared(true)
-      setTimeout(() => setCacheCleared(false), 2000)
-    } catch {
-      // silently fail
-    }
   }
 
   return (
@@ -103,28 +98,19 @@ function IndexPopup() {
       </div>
 
       <p style={{ fontSize: 13, color: "#555", lineHeight: 1.5, marginBottom: 16 }}>
-        Automatically shows Rate My Professors ratings next to professor names
-        on TTU Schedule Builder.
+        Automatically shows Rate My Professors ratings and Grade Distribution on TTU Schedule Builder.
       </p>
 
-      <button
-        style={{
-          width: "100%",
-          padding: "10px 0",
-          border: "1px solid #ddd",
-          borderRadius: 6,
-          background: cacheCleared ? "#4CAF50" : "#fff",
-          color: cacheCleared ? "#fff" : "#333",
-          cursor: "pointer",
-          fontSize: 13,
-          marginBottom: 8,
-        }}
-        onClick={handleClearCache}>
-        {cacheCleared ? "Cache Cleared!" : "Clear Rating Cache"}
-      </button>
-
-      <div style={{ fontSize: 11, color: "#aaa", textAlign: "center", marginTop: 12 }}>
+      <div style={{ ...footerStyle, marginTop: 12 }}>
         Built for Texas Tech University
+      </div>
+      <div style={{ ...footerStyle, marginTop: 12 }}>
+        Problem/Suggestions:{" "}
+        <a
+          href="mailto:31lavneet@gmail.com?subject=RaiderRating%20Feedback"
+          style={{ color: "#aaa", textDecoration: "underline" }}>
+          Contact Us
+        </a>
       </div>
     </div>
   )
