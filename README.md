@@ -13,7 +13,7 @@ No more switching tabs during registration — see professor ratings, difficulty
 1. Install the extension from the Chrome Web Store
 2. Go to [schedulebuilder.ttu.edu](https://schedulebuilder.ttu.edu) and search any course
 3. Rating badges appear automatically next to each professor's name
-4. Click a badge to open the details popup
+4. Click a badge to open the popup, and see the ratings and the grade distrubution in detail.
 
 ### Rating badge
 
