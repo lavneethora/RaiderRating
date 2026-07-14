@@ -2,6 +2,10 @@
 
 All notable changes to RaiderRating.
 
+## v1.4 — 2026-06-21
+
+- **New:** Live server status indicator in the extension popup. See at a glance whether the RaiderRating service is online (green) or offline (red).
+
 ## v1.3 — 2026-06-21
 
 - **New:** "Problem/Suggestions: Contact Us" link in the extension popup for user feedback.
