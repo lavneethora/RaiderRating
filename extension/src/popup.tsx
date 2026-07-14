@@ -3,6 +3,8 @@ import { Storage } from "@plasmohq/storage"
 
 const storage = new Storage()
 
+const API_BASE = "https://proflens-api-production.up.railway.app"
+
 const containerStyle: React.CSSProperties = {
   width: 300,
   padding: 20,
@@ -35,13 +37,72 @@ const footerStyle: React.CSSProperties = {
   textAlign: "center",
 }
 
+type Status = "checking" | "online" | "offline"
+
+const STATUS_COLORS: Record<Status, string> = {
+  checking: "#aaa",
+  online: "#4CAF50",
+  offline: "#F44336",
+}
+
+const STATUS_LABELS: Record<Status, string> = {
+  checking: "Checking",
+  online: "Online",
+  offline: "Offline",
+}
+
+function StatusIndicator({ status }: { status: Status }) {
+  const color = STATUS_COLORS[status]
+  return (
+    <div style={{
+      display: "flex",
+      alignItems: "center",
+      gap: 6,
+      marginLeft: "auto",
+    }}>
+      <div style={{
+        width: 8,
+        height: 8,
+        borderRadius: "50%",
+        background: color,
+        animation: status === "checking" ? "none" : "rr-blink 1.4s ease-in-out infinite",
+      }} />
+      <span style={{ fontSize: 12, fontWeight: 600, color }}>
+        {STATUS_LABELS[status]}
+      </span>
+    </div>
+  )
+}
+
 function IndexPopup() {
   const [enabled, setEnabled] = useState(true)
+  const [apiStatus, setApiStatus] = useState<Status>("checking")
 
   useEffect(() => {
     storage.get<boolean>("enabled").then((val) => {
       setEnabled(val !== false)
     })
+  }, [])
+
+  useEffect(() => {
+    let cancelled = false
+    // 15s timeout — long enough to survive a Railway serverless cold start
+    // (which can take 5-10s when the service has been idle).
+    const check = async () => {
+      try {
+        const controller = new AbortController()
+        const timeout = setTimeout(() => controller.abort(), 15000)
+        const res = await fetch(`${API_BASE}/health`, { signal: controller.signal })
+        clearTimeout(timeout)
+        if (!cancelled) setApiStatus(res.ok ? "online" : "offline")
+      } catch {
+        if (!cancelled) setApiStatus("offline")
+      }
+    }
+    check()
+    return () => {
+      cancelled = true
+    }
   }, [])
 
   const handleToggle = async () => {
@@ -52,12 +113,20 @@ function IndexPopup() {
 
   return (
     <div style={containerStyle}>
+      <style>{`
+        @keyframes rr-blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.35; }
+        }
+      `}</style>
+
       <div style={headerStyle}>
         <div style={logoStyle}>RR</div>
         <div>
           <div style={{ fontSize: 18, fontWeight: 700, color: "#333" }}>RaiderRating</div>
           <div style={{ fontSize: 12, color: "#888" }}>v{chrome.runtime.getManifest().version}</div>
         </div>
+        <StatusIndicator status={apiStatus} />
       </div>
 
       <div style={{
