@@ -2,6 +2,10 @@
 
 All notable changes to RaiderRating.
 
+## v1.5 — 2026-08-23
+
+- **New:** In-extension feedback form. Click "Contact Us" in the popup to send a message directly — no email client needed.
+
 ## v1.4 — 2026-06-21
 
 - **New:** Live server status indicator in the extension popup. See at a glance whether the RaiderRating service is online (green) or offline (red).

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { sendToBackground } from "@plasmohq/messaging"
 import { Storage } from "@plasmohq/storage"
 
 const storage = new Storage()
@@ -37,7 +38,19 @@ const footerStyle: React.CSSProperties = {
   textAlign: "center",
 }
 
+const inputStyle: React.CSSProperties = {
+  width: "100%",
+  padding: "8px 10px",
+  border: "1px solid #ddd",
+  borderRadius: 6,
+  fontSize: 13,
+  fontFamily: "inherit",
+  boxSizing: "border-box",
+  outline: "none",
+}
+
 type Status = "checking" | "online" | "offline"
+type FormState = "idle" | "sending" | "sent" | "error"
 
 const STATUS_COLORS: Record<Status, string> = {
   checking: "#aaa",
@@ -74,9 +87,17 @@ function StatusIndicator({ status }: { status: Status }) {
   )
 }
 
+const sendBg = sendToBackground as unknown as (msg: { name: string; body: unknown }) => Promise<unknown>
+
 function IndexPopup() {
   const [enabled, setEnabled] = useState(true)
   const [apiStatus, setApiStatus] = useState<Status>("checking")
+  const [showForm, setShowForm] = useState(false)
+  const [formState, setFormState] = useState<FormState>("idle")
+  const [formError, setFormError] = useState("")
+  const [subject, setSubject] = useState("")
+  const [message, setMessage] = useState("")
+  const [email, setEmail] = useState("")
 
   useEffect(() => {
     storage.get<boolean>("enabled").then((val) => {
@@ -86,8 +107,6 @@ function IndexPopup() {
 
   useEffect(() => {
     let cancelled = false
-    // 15s timeout — long enough to survive a Railway serverless cold start
-    // (which can take 5-10s when the service has been idle).
     const check = async () => {
       try {
         const controller = new AbortController()
@@ -109,6 +128,131 @@ function IndexPopup() {
     const next = !enabled
     setEnabled(next)
     await storage.set("enabled", next)
+  }
+
+  const handleSubmit = async () => {
+    if (!subject.trim() || !message.trim() || !email.trim()) {
+      setFormError("All fields are required.")
+      return
+    }
+    setFormState("sending")
+    setFormError("")
+    try {
+      const result = await sendBg({
+        name: "submitFeedback",
+        body: { subject: subject.trim(), message: message.trim(), email: email.trim() },
+      }) as { success: boolean; error?: string }
+      if (result.success) {
+        setFormState("sent")
+        setTimeout(() => {
+          setShowForm(false)
+          setFormState("idle")
+          setSubject("")
+          setMessage("")
+          setEmail("")
+        }, 2000)
+      } else {
+        setFormError(result.error || "Something went wrong.")
+        setFormState("error")
+      }
+    } catch {
+      setFormError("Network error. Please try again.")
+      setFormState("error")
+    }
+  }
+
+  if (showForm) {
+    return (
+      <div style={containerStyle}>
+        <style>{`
+          @keyframes rr-blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.35; }
+          }
+        `}</style>
+
+        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16 }}>
+          <span
+            onClick={() => { setShowForm(false); setFormState("idle"); setFormError("") }}
+            style={{ cursor: "pointer", fontSize: 18, color: "#888", lineHeight: 1 }}>
+            &#8592;
+          </span>
+          <span style={{ fontSize: 16, fontWeight: 700, color: "#333" }}>Message Us</span>
+        </div>
+
+        {formState === "sent" ? (
+          <div style={{
+            textAlign: "center",
+            padding: "30px 0",
+            color: "#4CAF50",
+            fontSize: 14,
+            fontWeight: 600,
+          }}>
+            Sent! Thanks for your feedback.
+          </div>
+        ) : (
+          <>
+            <div style={{ marginBottom: 10 }}>
+              <label style={{ fontSize: 12, color: "#666", display: "block", marginBottom: 4 }}>Subject</label>
+              <input
+                type="text"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                placeholder="e.g. Bug report, Feature request"
+                maxLength={200}
+                style={inputStyle}
+              />
+            </div>
+
+            <div style={{ marginBottom: 10 }}>
+              <label style={{ fontSize: 12, color: "#666", display: "block", marginBottom: 4 }}>Message</label>
+              <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Tell us what's on your mind..."
+                maxLength={2000}
+                rows={4}
+                style={{ ...inputStyle, resize: "vertical", minHeight: 80 }}
+              />
+            </div>
+
+            <div style={{ marginBottom: 14 }}>
+              <label style={{ fontSize: 12, color: "#666", display: "block", marginBottom: 4 }}>Your Email</label>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="you@ttu.edu"
+                style={inputStyle}
+              />
+            </div>
+
+            {formError && (
+              <div style={{ fontSize: 12, color: "#F44336", marginBottom: 10 }}>
+                {formError}
+              </div>
+            )}
+
+            <button
+              onClick={handleSubmit}
+              disabled={formState === "sending"}
+              style={{
+                width: "100%",
+                padding: "10px 0",
+                border: "none",
+                borderRadius: 6,
+                background: formState === "sending" ? "#999" : "#CC0000",
+                color: "#fff",
+                cursor: formState === "sending" ? "default" : "pointer",
+                fontSize: 13,
+                fontWeight: 600,
+              }}>
+              {formState === "sending" ? "Sending..." : "Send"}
+            </button>
+          </>
+        )}
+      </div>
+    )
   }
 
   return (
@@ -175,11 +319,11 @@ function IndexPopup() {
       </div>
       <div style={{ ...footerStyle, marginTop: 12 }}>
         Problem/Suggestions:{" "}
-        <a
-          href="mailto:31lavneet@gmail.com?subject=RaiderRating%20Feedback"
-          style={{ color: "#aaa", textDecoration: "underline" }}>
+        <span
+          onClick={() => setShowForm(true)}
+          style={{ color: "#aaa", textDecoration: "underline", cursor: "pointer" }}>
           Contact Us
-        </a>
+        </span>
       </div>
     </div>
   )
