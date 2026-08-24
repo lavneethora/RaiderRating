@@ -5,6 +5,7 @@ import rateLimit from 'express-rate-limit'
 import { requestLogger } from './utils/logger'
 import professorRoutes from './routes/professors'
 import gradeRoutes from './routes/grades'
+import feedbackRoutes from './routes/feedback'
 import { clearCache, getCacheStats } from './services/cache'
 
 const app = express()
@@ -27,6 +28,7 @@ app.get('/health', (_req, res) => {
 
 app.use('/api/professors', professorRoutes)
 app.use('/api/grades', gradeRoutes)
+app.use('/api/feedback', feedbackRoutes)
 
 function requireAdminKey(req: import('express').Request, res: import('express').Response, next: import('express').NextFunction) {
   const key = process.env.ADMIN_API_KEY
@@ -45,5 +47,5 @@ app.get('/api/cache/stats', requireAdminKey, (_req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`ProfLens API running on http://localhost:${port}`)
+  console.log(`RaiderRating API running on http://localhost:${port}`)
 })
