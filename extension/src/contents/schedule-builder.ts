@@ -368,7 +368,7 @@ function showGradeModal(
   modal.appendChild(el(
     "div",
     { fontSize: "12px", fontWeight: "700", margin: "8px 0 6px", color: "#333" },
-    `All semesters (n=${overallTotal})`,
+    `All semesters (Class Size = ${overallTotal})`,
   ))
   modal.appendChild(buildGradeChart(gradeEntry.overall, overallTotal))
 
@@ -384,7 +384,7 @@ function showGradeModal(
     modal.appendChild(el(
       "div",
       { fontSize: "12px", fontWeight: "700", marginBottom: "6px", color: "#333" },
-      `${sem.semester} (n=${semTotal})`,
+      `${sem.semester} (Class Size = ${semTotal})`,
     ))
     modal.appendChild(buildGradeChart(sem, semTotal))
   }
