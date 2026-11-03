@@ -1,6 +1,8 @@
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resend = process.env.RESEND_API_KEY
+  ? new Resend(process.env.RESEND_API_KEY)
+  : null
 
 const TO_EMAIL = '31lavneet@gmail.com'
 
@@ -9,6 +11,7 @@ export async function sendFeedbackEmail(
   message: string,
   userEmail: string
 ): Promise<void> {
+  if (!resend) throw new Error('Feedback service unavailable')
   const { error } = await resend.emails.send({
     from: 'RaiderRating <onboarding@resend.dev>',
     to: TO_EMAIL,
