@@ -240994,5 +240994,5501 @@
         "total": 26
       }
     ]
+  },
+  "hodgins:adv4601": {
+    "instructor": "Hodgins, James",
+    "course": "ADV 4601",
+    "overall": {
+      "A": 13,
+      "B": 4,
+      "C": 3,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 13,
+        "B": 4,
+        "C": 3,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 21
+      }
+    ]
+  },
+  "ritz:aged4410": {
+    "instructor": "Ritz, Rudolph",
+    "course": "AGED 4410",
+    "overall": {
+      "A": 19,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 19,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 19
+      }
+    ]
+  },
+  "brashears:agls4330": {
+    "instructor": "Brashears, Michel",
+    "course": "AGLS 4330",
+    "overall": {
+      "A": 19,
+      "B": 4,
+      "C": 1,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 19,
+        "B": 4,
+        "C": 1,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 25
+      }
+    ]
+  },
+  "jordan:anth3317": {
+    "instructor": "Jordan, Michael",
+    "course": "ANTH 3317",
+    "overall": {
+      "A": 12,
+      "B": 1,
+      "C": 0,
+      "D": 1,
+      "F": 1,
+      "I": 1,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 2
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 12,
+        "B": 1,
+        "C": 0,
+        "D": 1,
+        "F": 1,
+        "I": 1,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 2,
+        "total": 20
+      }
+    ]
+  },
+  "linksvayer:biol4303": {
+    "instructor": "Linksvayer, Timothy",
+    "course": "BIOL 4303",
+    "overall": {
+      "A": 17,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 17
+      }
+    ]
+  },
+  "gauthier:che4121": {
+    "instructor": "Gauthier, Joseph",
+    "course": "CHE 4121",
+    "overall": {
+      "A": 6,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 6
+      }
+    ]
+  },
+  "soni:che4366": {
+    "instructor": "Soni, Purushottam",
+    "course": "CHE 4366",
+    "overall": {
+      "A": 16,
+      "B": 5,
+      "C": 1,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 16,
+        "B": 5,
+        "C": 1,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 23
+      }
+    ]
+  },
+  "ghebrab:cone4312": {
+    "instructor": "Ghebrab, Tewodros",
+    "course": "CONE 4312",
+    "overall": {
+      "A": 14,
+      "B": 2,
+      "C": 7,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 14,
+        "B": 2,
+        "C": 7,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 24
+      }
+    ]
+  },
+  "de naro:dan2323": {
+    "instructor": "De Naro, Anthony",
+    "course": "DAN 2323",
+    "overall": {
+      "A": 20,
+      "B": 0,
+      "C": 1,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 20,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 21
+      }
+    ]
+  },
+  "karp:ece3304": {
+    "instructor": "Karp, Tanja",
+    "course": "ECE 3304",
+    "overall": {
+      "A": 1,
+      "B": 1,
+      "C": 2,
+      "D": 0,
+      "F": 2,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 1,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 8
+      }
+    ]
+  },
+  "johnston:ece3304": {
+    "instructor": "Johnston, Derek",
+    "course": "ECE 3304",
+    "overall": {
+      "A": 11,
+      "B": 8,
+      "C": 4,
+      "D": 1,
+      "F": 2,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 11,
+        "B": 8,
+        "C": 4,
+        "D": 1,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 27
+      }
+    ]
+  },
+  "mcarthur:ece4325": {
+    "instructor": "McArthur, Everett",
+    "course": "ECE 4325",
+    "overall": {
+      "A": 28,
+      "B": 10,
+      "C": 1,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 28,
+        "B": 10,
+        "C": 1,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 41
+      }
+    ]
+  },
+  "he:ece4340": {
+    "instructor": "He, Miao",
+    "course": "ECE 4340",
+    "overall": {
+      "A": 16,
+      "B": 5,
+      "C": 2,
+      "D": 1,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 16,
+        "B": 5,
+        "C": 2,
+        "D": 1,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 26
+      }
+    ]
+  },
+  "li:ece4349": {
+    "instructor": "Li, Changzhi",
+    "course": "ECE 4349",
+    "overall": {
+      "A": 4,
+      "B": 6,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 4,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 10
+      }
+    ]
+  },
+  "kantelis:enco4320": {
+    "instructor": "Kantelis, Nicole",
+    "course": "ENCO 4320",
+    "overall": {
+      "A": 4,
+      "B": 10,
+      "C": 3,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 4,
+        "B": 10,
+        "C": 3,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 17
+      }
+    ]
+  },
+  "kantelis:enco4344": {
+    "instructor": "Kantelis, Nicole",
+    "course": "ENCO 4344",
+    "overall": {
+      "A": 4,
+      "B": 8,
+      "C": 2,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 4,
+        "B": 8,
+        "C": 2,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 15
+      }
+    ]
+  },
+  "spurgeon:engl4342": {
+    "instructor": "Spurgeon, Sara",
+    "course": "ENGL 4342",
+    "overall": {
+      "A": 14,
+      "B": 4,
+      "C": 2,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 14,
+        "B": 4,
+        "C": 2,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 21
+      }
+    ]
+  },
+  "geiger:engl4363": {
+    "instructor": "Geiger, T",
+    "course": "ENGL 4363",
+    "overall": {
+      "A": 6,
+      "B": 2,
+      "C": 0,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 6,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 9
+      }
+    ]
+  },
+  "rana:geog3337": {
+    "instructor": "Rana, Birendra",
+    "course": "GEOG 3337",
+    "overall": {
+      "A": 4,
+      "B": 0,
+      "C": 1,
+      "D": 1,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 4,
+        "B": 0,
+        "C": 1,
+        "D": 1,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 8
+      }
+    ]
+  },
+  "lee:geog4321": {
+    "instructor": "Lee, Jeffrey",
+    "course": "GEOG 4321",
+    "overall": {
+      "A": 7,
+      "B": 2,
+      "C": 1,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 7,
+        "B": 2,
+        "C": 1,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 10
+      }
+    ]
+  },
+  "yoshinobu:geol4318": {
+    "instructor": "Yoshinobu, Aaron",
+    "course": "GEOL 4318",
+    "overall": {
+      "A": 3,
+      "B": 1,
+      "C": 3,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 3,
+        "B": 1,
+        "C": 3,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 7
+      }
+    ]
+  },
+  "mcadams:geol4340": {
+    "instructor": "McAdams, Neo",
+    "course": "GEOL 4340",
+    "overall": {
+      "A": 8,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 8
+      }
+    ]
+  },
+  "cattell:germ4306": {
+    "instructor": "Cattell, Alec",
+    "course": "GERM 4306",
+    "overall": {
+      "A": 9,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 9
+      }
+    ]
+  },
+  "forsythe:hist3302": {
+    "instructor": "Forsythe, Gary",
+    "course": "HIST 3302",
+    "overall": {
+      "A": 16,
+      "B": 16,
+      "C": 1,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 16,
+        "B": 16,
+        "C": 1,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 35
+      }
+    ]
+  },
+  "cunningham:hist3312": {
+    "instructor": "Cunningham, Sean",
+    "course": "HIST 3312",
+    "overall": {
+      "A": 22,
+      "B": 1,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 22,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 23
+      }
+    ]
+  },
+  "sanchez:hist3321": {
+    "instructor": "Sanchez, Aaron",
+    "course": "HIST 3321",
+    "overall": {
+      "A": 9,
+      "B": 7,
+      "C": 10,
+      "D": 1,
+      "F": 3,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 9,
+        "B": 7,
+        "C": 10,
+        "D": 1,
+        "F": 3,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 32
+      }
+    ]
+  },
+  "hahn:hist3334": {
+    "instructor": "Hahn, Barbara",
+    "course": "HIST 3334",
+    "overall": {
+      "A": 22,
+      "B": 7,
+      "C": 1,
+      "D": 0,
+      "F": 2,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 3,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 22,
+        "B": 7,
+        "C": 1,
+        "D": 0,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 3,
+        "O": 0,
+        "total": 35
+      }
+    ]
+  },
+  "nelson:hist3347": {
+    "instructor": "Nelson, John",
+    "course": "HIST 3347",
+    "overall": {
+      "A": 17,
+      "B": 8,
+      "C": 3,
+      "D": 0,
+      "F": 3,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 17,
+        "B": 8,
+        "C": 3,
+        "D": 0,
+        "F": 3,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 31
+      }
+    ]
+  },
+  "williams:hist3351": {
+    "instructor": "Williams, Gretchen",
+    "course": "HIST 3351",
+    "overall": {
+      "A": 7,
+      "B": 4,
+      "C": 6,
+      "D": 3,
+      "F": 11,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 3,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 7,
+        "B": 4,
+        "C": 6,
+        "D": 3,
+        "F": 11,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 3,
+        "O": 0,
+        "total": 34
+      }
+    ]
+  },
+  "baum:hist3358": {
+    "instructor": "Baum, Jacob",
+    "course": "HIST 3358",
+    "overall": {
+      "A": 8,
+      "B": 13,
+      "C": 5,
+      "D": 1,
+      "F": 4,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 8,
+        "B": 13,
+        "C": 5,
+        "D": 1,
+        "F": 4,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 33
+      }
+    ]
+  },
+  "mosher:hist3384": {
+    "instructor": "Mosher, Jeffrey",
+    "course": "HIST 3384",
+    "overall": {
+      "A": 6,
+      "B": 9,
+      "C": 5,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 6,
+        "B": 9,
+        "C": 5,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 20
+      }
+    ]
+  },
+  "pelley:hist3394": {
+    "instructor": "Pelley, Patricia",
+    "course": "HIST 3394",
+    "overall": {
+      "A": 12,
+      "B": 2,
+      "C": 0,
+      "D": 0,
+      "F": 3,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 12,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "F": 3,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 17
+      }
+    ]
+  },
+  "nguyen:hist4320": {
+    "instructor": "Nguyen, Uyen",
+    "course": "HIST 4320",
+    "overall": {
+      "A": 6,
+      "B": 4,
+      "C": 1,
+      "D": 1,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 6,
+        "B": 4,
+        "C": 1,
+        "D": 1,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 12
+      }
+    ]
+  },
+  "willett:hist4326": {
+    "instructor": "Willett, Julie",
+    "course": "HIST 4326",
+    "overall": {
+      "A": 11,
+      "B": 3,
+      "C": 1,
+      "D": 0,
+      "F": 0,
+      "I": 1,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 11,
+        "B": 3,
+        "C": 1,
+        "D": 0,
+        "F": 0,
+        "I": 1,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 17
+      }
+    ]
+  },
+  "barenberg:hist4361": {
+    "instructor": "Barenberg, Alan",
+    "course": "HIST 4361",
+    "overall": {
+      "A": 10,
+      "B": 4,
+      "C": 2,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 10,
+        "B": 4,
+        "C": 2,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 18
+      }
+    ]
+  },
+  "poole:hist4371": {
+    "instructor": "Poole, Benjamin",
+    "course": "HIST 4371",
+    "overall": {
+      "A": 6,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 7
+      }
+    ]
+  },
+  "swingen:hist4373": {
+    "instructor": "Swingen, Abigail",
+    "course": "HIST 4373",
+    "overall": {
+      "A": 6,
+      "B": 1,
+      "C": 0,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 8
+      }
+    ]
+  },
+  "levario:hist4382": {
+    "instructor": "Levario, Miguel",
+    "course": "HIST 4382",
+    "overall": {
+      "A": 9,
+      "B": 4,
+      "C": 2,
+      "D": 0,
+      "F": 0,
+      "I": 1,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 9,
+        "B": 4,
+        "C": 2,
+        "D": 0,
+        "F": 0,
+        "I": 1,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 16
+      }
+    ]
+  },
+  "johnson:hist4399": {
+    "instructor": "Johnson, Matthew",
+    "course": "HIST 4399",
+    "overall": {
+      "A": 6,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 6
+      }
+    ]
+  },
+  "palmer:hlth4308": {
+    "instructor": "Palmer, Ty",
+    "course": "HLTH 4308",
+    "overall": {
+      "A": 8,
+      "B": 2,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 8,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 10
+      }
+    ]
+  },
+  "bradatan:hons2314": {
+    "instructor": "Bradatan, Costica",
+    "course": "HONS 2314",
+    "overall": {
+      "A": 3,
+      "B": 3,
+      "C": 2,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 3,
+        "B": 3,
+        "C": 2,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 10
+      }
+    ]
+  },
+  "cuevas:hrm3315": {
+    "instructor": "Cuevas, Leslie",
+    "course": "HRM 3315",
+    "overall": {
+      "A": 9,
+      "B": 6,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 9,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 15
+      }
+    ]
+  },
+  "alcorn:hrm4352": {
+    "instructor": "Alcorn, Michelle",
+    "course": "HRM 4352",
+    "overall": {
+      "A": 5,
+      "B": 1,
+      "C": 1,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 5,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 7
+      }
+    ]
+  },
+  "dass:ib3105": {
+    "instructor": "Dass, Mayukh",
+    "course": "IB 3105",
+    "overall": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 5
+      }
+    ]
+  },
+  "harper:ib3105": {
+    "instructor": "Harper, Jeffrey",
+    "course": "IB 3105",
+    "overall": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 6,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 6,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 6
+      }
+    ]
+  },
+  "masselli:ib3105": {
+    "instructor": "Masselli, John",
+    "course": "IB 3105",
+    "overall": {
+      "A": 10,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 10
+      }
+    ]
+  },
+  "bazaid:id1101": {
+    "instructor": "Bazaid, Rana",
+    "course": "ID 1101",
+    "overall": {
+      "A": 6,
+      "B": 8,
+      "C": 3,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 6,
+        "B": 8,
+        "C": 3,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 19
+      }
+    ]
+  },
+  "khan:id1101": {
+    "instructor": "Khan, Amani",
+    "course": "ID 1101",
+    "overall": {
+      "A": 4,
+      "B": 7,
+      "C": 4,
+      "D": 0,
+      "F": 4,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 4,
+        "B": 7,
+        "C": 4,
+        "D": 0,
+        "F": 4,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 19
+      }
+    ]
+  },
+  "chowdhury:ie4361": {
+    "instructor": "Chowdhury, Suman",
+    "course": "IE 4361",
+    "overall": {
+      "A": 14,
+      "B": 16,
+      "C": 10,
+      "D": 4,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 14,
+        "B": 16,
+        "C": 10,
+        "D": 4,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 44
+      }
+    ]
+  },
+  "long:math4325": {
+    "instructor": "Long, Katharine",
+    "course": "MATH 4325",
+    "overall": {
+      "A": 2,
+      "B": 1,
+      "C": 0,
+      "D": 0,
+      "F": 2,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 2,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 7
+      }
+    ]
+  },
+  "zak:mbio4401": {
+    "instructor": "Zak, John",
+    "course": "MBIO 4401",
+    "overall": {
+      "A": 27,
+      "B": 16,
+      "C": 5,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 27,
+        "B": 16,
+        "C": 5,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 50
+      }
+    ]
+  },
+  "jeter:mbio4406": {
+    "instructor": "Jeter, Randall",
+    "course": "MBIO 4406",
+    "overall": {
+      "A": 3,
+      "B": 5,
+      "C": 3,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 3,
+        "B": 5,
+        "C": 3,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 11
+      }
+    ]
+  },
+  "james:me4360": {
+    "instructor": "James, Darryl",
+    "course": "ME 4360",
+    "overall": {
+      "A": 17,
+      "B": 7,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 17,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 25
+      }
+    ]
+  },
+  "emadibaladehi:petr4107": {
+    "instructor": "Emadibaladehi, Seyedhossein",
+    "course": "PETR 4107",
+    "overall": {
+      "A": 8,
+      "B": 2,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 8,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 10
+      }
+    ]
+  },
+  "boadi:pfi3321": {
+    "instructor": "Boadi, Boakye-Yam",
+    "course": "PFI 3321",
+    "overall": {
+      "A": 17,
+      "B": 13,
+      "C": 11,
+      "D": 5,
+      "F": 6,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 4,
+        "B": 4,
+        "C": 6,
+        "D": 3,
+        "F": 3,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 21
+      },
+      {
+        "semester": "Fall 2022",
+        "A": 13,
+        "B": 9,
+        "C": 5,
+        "D": 2,
+        "F": 3,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 32
+      }
+    ]
+  },
+  "cassady:pfi3321": {
+    "instructor": "Cassady, Jacklyn",
+    "course": "PFI 3321",
+    "overall": {
+      "A": 37,
+      "B": 30,
+      "C": 11,
+      "D": 3,
+      "F": 19,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 8,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 27,
+        "B": 8,
+        "C": 4,
+        "D": 1,
+        "F": 12,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 3,
+        "O": 0,
+        "total": 55
+      },
+      {
+        "semester": "Fall 2022",
+        "A": 10,
+        "B": 22,
+        "C": 7,
+        "D": 2,
+        "F": 7,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 5,
+        "O": 0,
+        "total": 53
+      }
+    ]
+  },
+  "velasco:phil2330": {
+    "instructor": "Velasco, Joel",
+    "course": "PHIL 2330",
+    "overall": {
+      "A": 13,
+      "B": 2,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 13,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 15
+      }
+    ]
+  },
+  "gottlieb:phil4300": {
+    "instructor": "Gottlieb, Joseph",
+    "course": "PHIL 4300",
+    "overall": {
+      "A": 6,
+      "B": 4,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 1,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 6,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 1,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 11
+      }
+    ]
+  },
+  "boylan:phil4310": {
+    "instructor": "Boylan, David",
+    "course": "PHIL 4310",
+    "overall": {
+      "A": 8,
+      "B": 2,
+      "C": 0,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 8,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 12
+      }
+    ]
+  },
+  "sv:pss4340": {
+    "instructor": "SV, Krishna Jagadish",
+    "course": "PSS 4340",
+    "overall": {
+      "A": 4,
+      "B": 6,
+      "C": 3,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 4,
+        "B": 6,
+        "C": 3,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 13
+      }
+    ]
+  },
+  "schneider:rhim3352": {
+    "instructor": "Schneider, Mark",
+    "course": "RHIM 3352",
+    "overall": {
+      "A": 4,
+      "B": 3,
+      "C": 1,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 4,
+        "B": 3,
+        "C": 1,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 9
+      }
+    ]
+  },
+  "lindquist:soc3355": {
+    "instructor": "Lindquist, Carol",
+    "course": "SOC 3355",
+    "overall": {
+      "A": 12,
+      "B": 3,
+      "C": 1,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 12,
+        "B": 3,
+        "C": 1,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 17
+      }
+    ]
+  },
+  "schneider:soc4311": {
+    "instructor": "Schneider, Andreas",
+    "course": "SOC 4311",
+    "overall": {
+      "A": 25,
+      "B": 10,
+      "C": 7,
+      "D": 1,
+      "F": 4,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 13,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 18
+      },
+      {
+        "semester": "Fall 2022",
+        "A": 12,
+        "B": 7,
+        "C": 7,
+        "D": 1,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 30
+      }
+    ]
+  },
+  "patterson:soc4331": {
+    "instructor": "Patterson, Jeffrey",
+    "course": "SOC 4331",
+    "overall": {
+      "A": 3,
+      "B": 2,
+      "C": 1,
+      "D": 2,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2022",
+        "A": 3,
+        "B": 2,
+        "C": 1,
+        "D": 2,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 11
+      }
+    ]
+  },
+  "zamora:span4308": {
+    "instructor": "Zamora, Jorge",
+    "course": "SPAN 4308",
+    "overall": {
+      "A": 32,
+      "B": 8,
+      "C": 0,
+      "D": 0,
+      "F": 2,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 12,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 22
+      },
+      {
+        "semester": "Fall 2022",
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 20
+      }
+    ]
+  },
+  "joiner:tha3362": {
+    "instructor": "Joiner, Casey",
+    "course": "THA 3362",
+    "overall": {
+      "A": 13,
+      "B": 2,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 13,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 16
+      }
+    ]
+  },
+  "bradatan:wgs3337": {
+    "instructor": "Bradatan, Cristina",
+    "course": "WGS 3337",
+    "overall": {
+      "A": 3,
+      "B": 1,
+      "C": 1,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2023",
+        "A": 3,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 5
+      }
+    ]
+  },
+  "rougeaux-burnes:adm3325": {
+    "instructor": "Rougeaux-Burnes, Lauren",
+    "course": "ADM 3325",
+    "overall": {
+      "A": 6,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 6
+      }
+    ]
+  },
+  "lektzian:adm3325": {
+    "instructor": "Lektzian, Jovita",
+    "course": "ADM 3325",
+    "overall": {
+      "A": 15,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2023",
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 15
+      }
+    ]
+  },
+  "boren alpizar:agls4309": {
+    "instructor": "Boren Alpizar, Amy",
+    "course": "AGLS 4309",
+    "overall": {
+      "A": 27,
+      "B": 1,
+      "C": 1,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 10,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 11
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 10,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 11
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 7
+      }
+    ]
+  },
+  "rathmann:ansc4202": {
+    "instructor": "Rathmann, Ryan",
+    "course": "ANSC 4202",
+    "overall": {
+      "A": 99,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 23
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 30
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 23
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 24
+      }
+    ]
+  },
+  "o'hanley:ansc4412": {
+    "instructor": "O'Hanley, Kristina",
+    "course": "ANSC 4412",
+    "overall": {
+      "A": 12,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2025",
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 12
+      }
+    ]
+  },
+  "whitman:anth1301": {
+    "instructor": "Whitman, Lauren",
+    "course": "ANTH 1301",
+    "overall": {
+      "A": 8,
+      "B": 15,
+      "C": 3,
+      "D": 0,
+      "F": 6,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2025",
+        "A": 4,
+        "B": 9,
+        "C": 2,
+        "D": 0,
+        "F": 4,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 19
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 4,
+        "B": 6,
+        "C": 1,
+        "D": 0,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 13
+      }
+    ]
+  },
+  "williams:anth3322": {
+    "instructor": "Williams, Jeffrey",
+    "course": "ANTH 3322",
+    "overall": {
+      "A": 44,
+      "B": 19,
+      "C": 14,
+      "D": 4,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 6,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 8
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 8,
+        "B": 2,
+        "C": 1,
+        "D": 1,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 14
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 11,
+        "B": 8,
+        "C": 8,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 28
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 19,
+        "B": 7,
+        "C": 5,
+        "D": 3,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 34
+      }
+    ]
+  },
+  "novotny:anth3353": {
+    "instructor": "Novotny, Anna",
+    "course": "ANTH 3353",
+    "overall": {
+      "A": 5,
+      "B": 5,
+      "C": 0,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2025",
+        "A": 5,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 11
+      }
+    ]
+  },
+  "lockwood:biol4321": {
+    "instructor": "Lockwood, Stephanie",
+    "course": "BIOL 4321",
+    "overall": {
+      "A": 15,
+      "B": 11,
+      "C": 5,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 15,
+        "B": 11,
+        "C": 5,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 31
+      }
+    ]
+  },
+  "pleasant:blaw4391": {
+    "instructor": "Pleasant, Laura",
+    "course": "BLAW 4391",
+    "overall": {
+      "A": 7,
+      "B": 9,
+      "C": 2,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2024",
+        "A": 7,
+        "B": 9,
+        "C": 2,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 18
+      }
+    ]
+  },
+  "brading:dan2303": {
+    "instructor": "Brading, Mary",
+    "course": "DAN 2303",
+    "overall": {
+      "A": 55,
+      "B": 17,
+      "C": 6,
+      "D": 0,
+      "F": 3,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 16,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 20
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 11,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 16
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 15,
+        "B": 6,
+        "C": 2,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 23
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 13,
+        "B": 5,
+        "C": 2,
+        "D": 0,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 22
+      }
+    ]
+  },
+  "duffy:dan2303": {
+    "instructor": "Duffy, Alison",
+    "course": "DAN 2303",
+    "overall": {
+      "A": 21,
+      "B": 1,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2023",
+        "A": 21,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 22
+      }
+    ]
+  },
+  "johnston:ece4334": {
+    "instructor": "Johnston, Derek",
+    "course": "ECE 4334",
+    "overall": {
+      "A": 6,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 6
+      }
+    ]
+  },
+  "nutter:ece4334": {
+    "instructor": "Nutter, Brian",
+    "course": "ECE 4334",
+    "overall": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 10,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2023",
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 10,
+        "W": 0,
+        "O": 0,
+        "total": 10
+      }
+    ]
+  },
+  "dallas:ece4378": {
+    "instructor": "Dallas, Timothy",
+    "course": "ECE 4378",
+    "overall": {
+      "A": 1,
+      "B": 30,
+      "C": 20,
+      "D": 1,
+      "F": 2,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 0,
+        "B": 4,
+        "C": 5,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 9
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 0,
+        "B": 11,
+        "C": 11,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 24
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 0,
+        "B": 9,
+        "C": 2,
+        "D": 1,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 14
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 1,
+        "B": 6,
+        "C": 2,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 9
+      }
+    ]
+  },
+  "abarca:eco3373": {
+    "instructor": "Abarca, Alejandro",
+    "course": "ECO 3373",
+    "overall": {
+      "A": 9,
+      "B": 3,
+      "C": 5,
+      "D": 0,
+      "F": 3,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 9,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "F": 3,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 20
+      }
+    ]
+  },
+  "lee:geog4335": {
+    "instructor": "Lee, Jeffrey",
+    "course": "GEOG 4335",
+    "overall": {
+      "A": 34,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 10
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 8
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 8
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 9
+      }
+    ]
+  },
+  "mcchesney:germ3314": {
+    "instructor": "McChesney, Anita",
+    "course": "GERM 3314",
+    "overall": {
+      "A": 12,
+      "B": 1,
+      "C": 1,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 5,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 6
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 7,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 8
+      }
+    ]
+  },
+  "boyd:hdfs4301": {
+    "instructor": "Boyd, Hannah",
+    "course": "HDFS 4301",
+    "overall": {
+      "A": 106,
+      "B": 24,
+      "C": 6,
+      "D": 1,
+      "F": 2,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 28,
+        "B": 4,
+        "C": 1,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 34
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 34,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 38
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 18,
+        "B": 13,
+        "C": 5,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 37
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 26,
+        "B": 4,
+        "C": 0,
+        "D": 1,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 31
+      }
+    ]
+  },
+  "legacey:hist3353": {
+    "instructor": "Legacey, Erin-Marie",
+    "course": "HIST 3353",
+    "overall": {
+      "A": 14,
+      "B": 6,
+      "C": 5,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2024",
+        "A": 5,
+        "B": 5,
+        "C": 3,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 13
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 9,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 12
+      }
+    ]
+  },
+  "mcchesney:hist3393": {
+    "instructor": "McChesney, Anita",
+    "course": "HIST 3393",
+    "overall": {
+      "A": 7,
+      "B": 1,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 7,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 8
+      }
+    ]
+  },
+  "legacey:hist3393": {
+    "instructor": "Legacey, Erin-Marie",
+    "course": "HIST 3393",
+    "overall": {
+      "A": 8,
+      "B": 3,
+      "C": 1,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2025",
+        "A": 8,
+        "B": 3,
+        "C": 1,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 12
+      }
+    ]
+  },
+  "baum:hist4352": {
+    "instructor": "Baum, Jacob",
+    "course": "HIST 4352",
+    "overall": {
+      "A": 11,
+      "B": 17,
+      "C": 9,
+      "D": 2,
+      "F": 6,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 5,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 5,
+        "B": 7,
+        "C": 3,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 17
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 4,
+        "B": 6,
+        "C": 3,
+        "D": 2,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 17
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 2,
+        "B": 4,
+        "C": 3,
+        "D": 0,
+        "F": 5,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 16
+      }
+    ]
+  },
+  "bjerk:hist4391": {
+    "instructor": "Bjerk, Paul",
+    "course": "HIST 4391",
+    "overall": {
+      "A": 10,
+      "B": 14,
+      "C": 15,
+      "D": 1,
+      "F": 9,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 11,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 3,
+        "B": 4,
+        "C": 5,
+        "D": 1,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 15
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 1,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 3,
+        "O": 0,
+        "total": 9
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 4,
+        "B": 2,
+        "C": 4,
+        "D": 0,
+        "F": 5,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 3,
+        "O": 0,
+        "total": 18
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 2,
+        "B": 5,
+        "C": 6,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 4,
+        "O": 0,
+        "total": 18
+      }
+    ]
+  },
+  "day:hlth3301": {
+    "instructor": "Day, Audra",
+    "course": "HLTH 3301",
+    "overall": {
+      "A": 93,
+      "B": 53,
+      "C": 13,
+      "D": 3,
+      "F": 5,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 7,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 24,
+        "B": 18,
+        "C": 0,
+        "D": 0,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 44
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 21,
+        "B": 15,
+        "C": 4,
+        "D": 2,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 44
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 30,
+        "B": 9,
+        "C": 2,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 44
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 18,
+        "B": 11,
+        "C": 7,
+        "D": 1,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 5,
+        "O": 0,
+        "total": 42
+      }
+    ]
+  },
+  "hodes:hons3341": {
+    "instructor": "Hodes, Joseph",
+    "course": "HONS 3341",
+    "overall": {
+      "A": 11,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 11
+      }
+    ]
+  },
+  "dodd:husc3350": {
+    "instructor": "Dodd, Sara",
+    "course": "HUSC 3350",
+    "overall": {
+      "A": 7,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2024",
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 7
+      }
+    ]
+  },
+  "velez gomez:husc3350": {
+    "instructor": "Velez Gomez, Paulina",
+    "course": "HUSC 3350",
+    "overall": {
+      "A": 7,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2024",
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 7
+      }
+    ]
+  },
+  "norman:ie4120": {
+    "instructor": "Norman, Bryan",
+    "course": "IE 4120",
+    "overall": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 5,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2023",
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 5,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 5
+      }
+    ]
+  },
+  "sheikhrezaei:ie4322": {
+    "instructor": "Sheikhrezaei, Kaveh",
+    "course": "IE 4322",
+    "overall": {
+      "A": 23,
+      "B": 4,
+      "C": 2,
+      "D": 0,
+      "F": 2,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 12,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 17
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 11,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 16
+      }
+    ]
+  },
+  "jay:ital2307": {
+    "instructor": "Jay, Emily",
+    "course": "ITAL 2307",
+    "overall": {
+      "A": 11,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2023",
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 11
+      }
+    ]
+  },
+  "villalobos:nrm3314": {
+    "instructor": "Villalobos, Jose",
+    "course": "NRM 3314",
+    "overall": {
+      "A": 48,
+      "B": 22,
+      "C": 6,
+      "D": 2,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 15,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 19
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 14,
+        "B": 3,
+        "C": 2,
+        "D": 1,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 20
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 11,
+        "B": 8,
+        "C": 2,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 21
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 8,
+        "B": 7,
+        "C": 2,
+        "D": 1,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 18
+      }
+    ]
+  },
+  "chang:retl3370": {
+    "instructor": "Chang, Hyo",
+    "course": "RETL 3370",
+    "overall": {
+      "A": 32,
+      "B": 23,
+      "C": 17,
+      "D": 7,
+      "F": 3,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 13,
+        "B": 9,
+        "C": 7,
+        "D": 2,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 31
+      },
+      {
+        "semester": "Summer 2025",
+        "A": 12,
+        "B": 7,
+        "C": 2,
+        "D": 0,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 23
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 3,
+        "B": 4,
+        "C": 5,
+        "D": 2,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 14
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 4,
+        "B": 3,
+        "C": 3,
+        "D": 3,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 14
+      }
+    ]
+  },
+  "fowler:retl4300": {
+    "instructor": "Fowler, Deborah",
+    "course": "RETL 4300",
+    "overall": {
+      "A": 5,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2023",
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 5
+      }
+    ]
+  },
+  "fowler:retl4360": {
+    "instructor": "Fowler, Deborah",
+    "course": "RETL 4360",
+    "overall": {
+      "A": 12,
+      "B": 1,
+      "C": 1,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2024",
+        "A": 12,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 15
+      }
+    ]
+  },
+  "blum:rhim3355": {
+    "instructor": "Blum, Shane",
+    "course": "RHIM 3355",
+    "overall": {
+      "A": 53,
+      "B": 24,
+      "C": 9,
+      "D": 1,
+      "F": 2,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 3,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2025",
+        "A": 26,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 34
+      },
+      {
+        "semester": "Summer 2024",
+        "A": 10,
+        "B": 6,
+        "C": 3,
+        "D": 1,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 3,
+        "O": 0,
+        "total": 23
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 17,
+        "B": 11,
+        "C": 6,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 35
+      }
+    ]
+  },
+  "alcorn:rhim4310": {
+    "instructor": "Alcorn, Michelle",
+    "course": "RHIM 4310",
+    "overall": {
+      "A": 15,
+      "B": 1,
+      "C": 3,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 15,
+        "B": 1,
+        "C": 3,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 20
+      }
+    ]
+  },
+  "koo:rhim4348": {
+    "instructor": "Koo, Bonhak",
+    "course": "RHIM 4348",
+    "overall": {
+      "A": 15,
+      "B": 11,
+      "C": 0,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2024",
+        "A": 10,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 13
+      },
+      {
+        "semester": "Summer 2023",
+        "A": 5,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 14
+      }
+    ]
+  },
+  "reynolds:span4346": {
+    "instructor": "Reynolds, Andrew",
+    "course": "SPAN 4346",
+    "overall": {
+      "A": 5,
+      "B": 1,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2026",
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 6
+      }
+    ]
+  },
+  "beusterien:span4346": {
+    "instructor": "Beusterien, John",
+    "course": "SPAN 4346",
+    "overall": {
+      "A": 11,
+      "B": 1,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2025",
+        "A": 11,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 12
+      }
+    ]
+  },
+  "regan:span4346": {
+    "instructor": "Regan, Brendan",
+    "course": "SPAN 4346",
+    "overall": {
+      "A": 12,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Summer 2023",
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 12
+      }
+    ]
+  },
+  "martin:aaec3306": {
+    "instructor": "Martin, Adam",
+    "course": "AAEC 3306",
+    "overall": {
+      "A": 16,
+      "B": 7,
+      "C": 6,
+      "D": 5,
+      "F": 5,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 4,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2019",
+        "A": 7,
+        "B": 1,
+        "C": 3,
+        "D": 2,
+        "F": 3,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 3,
+        "O": 0,
+        "total": 19
+      },
+      {
+        "semester": "Spring 2018",
+        "A": 6,
+        "B": 1,
+        "C": 1,
+        "D": 3,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 14
+      },
+      {
+        "semester": "Spring 2017",
+        "A": 3,
+        "B": 5,
+        "C": 2,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 10
+      }
+    ]
+  },
+  "fleischman:acct4310": {
+    "instructor": "Fleischman, Gary",
+    "course": "ACCT 4310",
+    "overall": {
+      "A": 30,
+      "B": 14,
+      "C": 8,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2019",
+        "A": 3,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 6
+      },
+      {
+        "semester": "Fall 2017",
+        "A": 8,
+        "B": 6,
+        "C": 5,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 19
+      },
+      {
+        "semester": "Fall 2016",
+        "A": 19,
+        "B": 7,
+        "C": 1,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 28
+      }
+    ]
+  },
+  "comiskey:adrs3328": {
+    "instructor": "Comiskey, George",
+    "course": "ADRS 3328",
+    "overall": {
+      "A": 5,
+      "B": 1,
+      "C": 1,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2017",
+        "A": 5,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 8
+      }
+    ]
+  },
+  "murova:agsc2300": {
+    "instructor": "Murova, Olga",
+    "course": "AGSC 2300",
+    "overall": {
+      "A": 31,
+      "B": 55,
+      "C": 32,
+      "D": 10,
+      "F": 8,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 5,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2017",
+        "A": 13,
+        "B": 18,
+        "C": 11,
+        "D": 3,
+        "F": 3,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 50
+      },
+      {
+        "semester": "Spring 2017",
+        "A": 8,
+        "B": 20,
+        "C": 10,
+        "D": 1,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 41
+      },
+      {
+        "semester": "Fall 2016",
+        "A": 10,
+        "B": 17,
+        "C": 11,
+        "D": 6,
+        "F": 4,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 50
+      }
+    ]
+  },
+  "neary:ansc3405": {
+    "instructor": "Neary, Joseph",
+    "course": "ANSC 3405",
+    "overall": {
+      "A": 29,
+      "B": 4,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2018",
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 16
+      },
+      {
+        "semester": "Spring 2017",
+        "A": 13,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 17
+      }
+    ]
+  },
+  "schroeder:ansc4301": {
+    "instructor": "Schroeder, Kathryn",
+    "course": "ANSC 4301",
+    "overall": {
+      "A": 6,
+      "B": 4,
+      "C": 0,
+      "D": 1,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2019",
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 6
+      },
+      {
+        "semester": "Fall 2017",
+        "A": 1,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 6
+      }
+    ]
+  },
+  "siu:anth2304": {
+    "instructor": "Siu, Lap",
+    "course": "ANTH 2304",
+    "overall": {
+      "A": 8,
+      "B": 7,
+      "C": 8,
+      "D": 1,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 2,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2018",
+        "A": 8,
+        "B": 7,
+        "C": 8,
+        "D": 1,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 2,
+        "O": 0,
+        "total": 26
+      }
+    ]
+  },
+  "griffith:anth3325": {
+    "instructor": "Griffith, Lauren",
+    "course": "ANTH 3325",
+    "overall": {
+      "A": 10,
+      "B": 3,
+      "C": 2,
+      "D": 0,
+      "F": 4,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 3,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2021",
+        "A": 10,
+        "B": 3,
+        "C": 2,
+        "D": 0,
+        "F": 4,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 3,
+        "O": 0,
+        "total": 22
+      }
+    ]
+  },
+  "walter:anth3342": {
+    "instructor": "Walter, Tamra",
+    "course": "ANTH 3342",
+    "overall": {
+      "A": 3,
+      "B": 7,
+      "C": 2,
+      "D": 2,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2019",
+        "A": 3,
+        "B": 7,
+        "C": 2,
+        "D": 2,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 14
+      }
+    ]
+  },
+  "houk:anth3375": {
+    "instructor": "Houk, Brett",
+    "course": "ANTH 3375",
+    "overall": {
+      "A": 3,
+      "B": 6,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2016",
+        "A": 3,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 9
+      }
+    ]
+  },
+  "houk:anth4310": {
+    "instructor": "Houk, Brett",
+    "course": "ANTH 4310",
+    "overall": {
+      "A": 7,
+      "B": 2,
+      "C": 0,
+      "D": 0,
+      "F": 1,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 1,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2020",
+        "A": 7,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "F": 1,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 1,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 12
+      }
+    ]
+  },
+  "stiphany:arch4361": {
+    "instructor": "Stiphany, Kristine",
+    "course": "ARCH 4361",
+    "overall": {
+      "A": 10,
+      "B": 3,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2019",
+        "A": 10,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 13
+      }
+    ]
+  },
+  "broughton:ba1101": {
+    "instructor": "Broughton, Barry",
+    "course": "BA 1101",
+    "overall": {
+      "A": 621,
+      "B": 329,
+      "C": 128,
+      "D": 47,
+      "F": 54,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 28,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2018",
+        "A": 169,
+        "B": 33,
+        "C": 20,
+        "D": 13,
+        "F": 9,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 3,
+        "O": 0,
+        "total": 247
+      },
+      {
+        "semester": "Spring 2018",
+        "A": 159,
+        "B": 66,
+        "C": 13,
+        "D": 3,
+        "F": 5,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 3,
+        "O": 0,
+        "total": 249
+      },
+      {
+        "semester": "Fall 2017",
+        "A": 102,
+        "B": 75,
+        "C": 37,
+        "D": 7,
+        "F": 13,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 9,
+        "O": 0,
+        "total": 243
+      },
+      {
+        "semester": "Spring 2017",
+        "A": 80,
+        "B": 81,
+        "C": 31,
+        "D": 14,
+        "F": 17,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 6,
+        "O": 0,
+        "total": 229
+      },
+      {
+        "semester": "Fall 2016",
+        "A": 111,
+        "B": 74,
+        "C": 27,
+        "D": 10,
+        "F": 10,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 7,
+        "O": 0,
+        "total": 239
+      }
+    ]
+  },
+  "young:beco4345": {
+    "instructor": "Young, Andrew",
+    "course": "BECO 4345",
+    "overall": {
+      "A": 8,
+      "B": 6,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2020",
+        "A": 3,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 8
+      },
+      {
+        "semester": "Fall 2018",
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 6
+      }
+    ]
+  },
+  "densmore:biol2120": {
+    "instructor": "Densmore, Llewellyn",
+    "course": "BIOL 2120",
+    "overall": {
+      "A": 29,
+      "B": 5,
+      "C": 0,
+      "D": 0,
+      "F": 0,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 1,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2018",
+        "A": 7,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 1,
+        "O": 0,
+        "total": 10
+      },
+      {
+        "semester": "Fall 2017",
+        "A": 13,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 15
+      },
+      {
+        "semester": "Fall 2016",
+        "A": 9,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "F": 0,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 10
+      }
+    ]
+  },
+  "lockwood:biol4305": {
+    "instructor": "Lockwood, Stephanie",
+    "course": "BIOL 4305",
+    "overall": {
+      "A": 8,
+      "B": 6,
+      "C": 9,
+      "D": 1,
+      "F": 2,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 0,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2017",
+        "A": 8,
+        "B": 6,
+        "C": 9,
+        "D": 1,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 0,
+        "O": 0,
+        "total": 26
+      }
+    ]
+  },
+  "rice:biol4305": {
+    "instructor": "Rice, Sean",
+    "course": "BIOL 4305",
+    "overall": {
+      "A": 7,
+      "B": 41,
+      "C": 35,
+      "D": 7,
+      "F": 11,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 4,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Spring 2017",
+        "A": 7,
+        "B": 41,
+        "C": 35,
+        "D": 7,
+        "F": 11,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 4,
+        "O": 0,
+        "total": 105
+      }
+    ]
+  },
+  "olson:biol4305": {
+    "instructor": "Olson, Matthew",
+    "course": "BIOL 4305",
+    "overall": {
+      "A": 25,
+      "B": 41,
+      "C": 26,
+      "D": 6,
+      "F": 2,
+      "I": 0,
+      "CR": 0,
+      "P": 0,
+      "NC": 0,
+      "PR": 0,
+      "W": 5,
+      "O": 0
+    },
+    "bySemester": [
+      {
+        "semester": "Fall 2016",
+        "A": 25,
+        "B": 41,
+        "C": 26,
+        "D": 6,
+        "F": 2,
+        "I": 0,
+        "CR": 0,
+        "P": 0,
+        "NC": 0,
+        "PR": 0,
+        "W": 5,
+        "O": 0,
+        "total": 105
+      }
+    ]
   }
 }
