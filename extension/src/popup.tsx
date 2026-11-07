@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { sendToBackground } from "@plasmohq/messaging"
 import { Storage } from "@plasmohq/storage"
 import type { SavedCRNData } from "~lib/crn-storage"
+import { clearCRNs } from "~lib/crn-storage"
 
 const storage = new Storage()
 
@@ -94,6 +95,8 @@ function IndexPopup() {
   const [enabled, setEnabled] = useState(true)
   const [apiStatus, setApiStatus] = useState<Status>("checking")
   const [crnData, setCrnData] = useState<SavedCRNData | null>(null)
+  const [onScheduleBuilder, setOnScheduleBuilder] = useState(false)
+  const [copyState, setCopyState] = useState<"idle" | "copying" | "copied" | "no-schedule">("idle")
   const [showForm, setShowForm] = useState(false)
   const [formState, setFormState] = useState<FormState>("idle")
   const [formError, setFormError] = useState("")
@@ -112,6 +115,10 @@ function IndexPopup() {
       savedCRNs: (change) => {
         setCrnData(change.newValue ?? null)
       },
+    })
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      const url = tabs[0]?.url || ""
+      setOnScheduleBuilder(url.includes("schedulebuilder.ttu.edu"))
     })
   }, [])
 
@@ -138,6 +145,28 @@ function IndexPopup() {
     const next = !enabled
     setEnabled(next)
     await storage.set("enabled", next)
+  }
+
+  const handleCopySchedule = async () => {
+    setCopyState("copying")
+    try {
+      const [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
+      if (!tab?.id) {
+        setCopyState("no-schedule")
+        return
+      }
+      const response = await chrome.tabs.sendMessage(tab.id, { type: "extractCRNs" })
+      if (response?.success && response.crns.length > 0) {
+        setCopyState("copied")
+        setTimeout(() => setCopyState("idle"), 2000)
+      } else {
+        setCopyState("no-schedule")
+        setTimeout(() => setCopyState("idle"), 2000)
+      }
+    } catch {
+      setCopyState("no-schedule")
+      setTimeout(() => setCopyState("idle"), 2000)
+    }
   }
 
   const handleSubmit = async () => {
@@ -320,6 +349,31 @@ function IndexPopup() {
         </div>
       </div>
 
+      {onScheduleBuilder && (
+        <button
+          onClick={handleCopySchedule}
+          disabled={copyState === "copying"}
+          style={{
+            width: "100%",
+            padding: "10px 0",
+            border: "none",
+            borderRadius: 6,
+            background: copyState === "copied" ? "#4CAF50"
+              : copyState === "no-schedule" ? "#F44336"
+              : "#CC0000",
+            color: "#fff",
+            cursor: copyState === "copying" ? "default" : "pointer",
+            fontSize: 13,
+            fontWeight: 600,
+            marginBottom: 12,
+          }}>
+          {copyState === "copying" ? "Copying..."
+            : copyState === "copied" ? "Schedule Copied!"
+            : copyState === "no-schedule" ? "No schedule found"
+            : "Copy Schedule"}
+        </button>
+      )}
+
       {crnData && crnData.crns.length > 0 && (
         <div style={{
           padding: "10px 12px",
@@ -331,13 +385,12 @@ function IndexPopup() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            marginBottom: 6,
           }}>
             <span style={{ fontSize: 13, fontWeight: 600, color: "#E65100" }}>
-              {crnData.crns.length} CRNs saved
+              {crnData.crns.length} CRNs ready
             </span>
             <button
-              onClick={() => storage.remove("savedCRNs")}
+              onClick={() => clearCRNs()}
               style={{
                 background: "none",
                 border: "none",
@@ -348,23 +401,6 @@ function IndexPopup() {
               }}>
               Clear
             </button>
-          </div>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
-            {crnData.crns.map((crn) => (
-              <span
-                key={crn}
-                style={{
-                  padding: "2px 8px",
-                  background: "#FFE0B2",
-                  borderRadius: 4,
-                  fontSize: 11,
-                  fontWeight: 600,
-                  color: "#E65100",
-                  fontFamily: "monospace",
-                }}>
-                {crn}
-              </span>
-            ))}
           </div>
         </div>
       )}
