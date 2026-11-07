@@ -96,7 +96,10 @@ function IndexPopup() {
   const [apiStatus, setApiStatus] = useState<Status>("checking")
   const [crnData, setCrnData] = useState<SavedCRNData | null>(null)
   const [onScheduleBuilder, setOnScheduleBuilder] = useState(false)
+  const [onRegistration, setOnRegistration] = useState(false)
   const [copyState, setCopyState] = useState<"idle" | "copying" | "copied" | "no-schedule">("idle")
+  const [pasteState, setPasteState] = useState<"idle" | "pasting" | "pasted" | "error">("idle")
+  const [pasteError, setPasteError] = useState("")
   const [showForm, setShowForm] = useState(false)
   const [formState, setFormState] = useState<FormState>("idle")
   const [formError, setFormError] = useState("")
@@ -119,6 +122,7 @@ function IndexPopup() {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       const url = tabs[0]?.url || ""
       setOnScheduleBuilder(url.includes("schedulebuilder.ttu.edu"))
+      setOnRegistration(url.includes("registration.texastech.edu"))
     })
   }, [])
 
@@ -166,6 +170,36 @@ function IndexPopup() {
     } catch {
       setCopyState("no-schedule")
       setTimeout(() => setCopyState("idle"), 2000)
+    }
+  }
+
+  const handlePasteSchedule = async () => {
+    if (!crnData || crnData.crns.length === 0) return
+    setPasteState("pasting")
+    setPasteError("")
+    try {
+      const [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
+      if (!tab?.id) {
+        setPasteState("error")
+        setPasteError("No active tab")
+        return
+      }
+      const response = await chrome.tabs.sendMessage(tab.id, {
+        type: "fillCRNs",
+        crns: crnData.crns,
+      }) as { success: boolean; filled: number; error?: string }
+      if (response?.success) {
+        setPasteState("pasted")
+        setTimeout(() => setPasteState("idle"), 2000)
+      } else {
+        setPasteState("error")
+        setPasteError(response?.error || "Failed to fill CRNs")
+        setTimeout(() => setPasteState("idle"), 3000)
+      }
+    } catch {
+      setPasteState("error")
+      setPasteError("Could not reach registration page")
+      setTimeout(() => setPasteState("idle"), 3000)
     }
   }
 
@@ -385,6 +419,7 @@ function IndexPopup() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            marginBottom: onRegistration ? 8 : 0,
           }}>
             <span style={{ fontSize: 13, fontWeight: 600, color: "#E65100" }}>
               {crnData.crns.length} CRNs ready
@@ -402,6 +437,31 @@ function IndexPopup() {
               Clear
             </button>
           </div>
+          {onRegistration && (
+            <>
+              <button
+                onClick={handlePasteSchedule}
+                disabled={pasteState === "pasting"}
+                style={{
+                  width: "100%",
+                  padding: "10px 0",
+                  border: "none",
+                  borderRadius: 6,
+                  background: pasteState === "pasted" ? "#4CAF50"
+                    : pasteState === "error" ? "#F44336"
+                    : "#CC0000",
+                  color: "#fff",
+                  cursor: pasteState === "pasting" ? "default" : "pointer",
+                  fontSize: 13,
+                  fontWeight: 600,
+                }}>
+                {pasteState === "pasting" ? "Pasting..."
+                  : pasteState === "pasted" ? "CRNs Filled!"
+                  : pasteState === "error" ? pasteError
+                  : "Paste Schedule"}
+              </button>
+            </>
+          )}
         </div>
       )}
 
