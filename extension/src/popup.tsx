@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { sendToBackground } from "@plasmohq/messaging"
 import { Storage } from "@plasmohq/storage"
+import type { SavedCRNData } from "~lib/crn-storage"
 
 const storage = new Storage()
 
@@ -92,6 +93,7 @@ const sendBg = sendToBackground as unknown as (msg: { name: string; body: unknow
 function IndexPopup() {
   const [enabled, setEnabled] = useState(true)
   const [apiStatus, setApiStatus] = useState<Status>("checking")
+  const [crnData, setCrnData] = useState<SavedCRNData | null>(null)
   const [showForm, setShowForm] = useState(false)
   const [formState, setFormState] = useState<FormState>("idle")
   const [formError, setFormError] = useState("")
@@ -102,6 +104,14 @@ function IndexPopup() {
   useEffect(() => {
     storage.get<boolean>("enabled").then((val) => {
       setEnabled(val !== false)
+    })
+    storage.get<SavedCRNData>("savedCRNs").then((val) => {
+      setCrnData(val ?? null)
+    })
+    storage.watch({
+      savedCRNs: (change) => {
+        setCrnData(change.newValue ?? null)
+      },
     })
   }, [])
 
@@ -309,6 +319,55 @@ function IndexPopup() {
           }} />
         </div>
       </div>
+
+      {crnData && crnData.crns.length > 0 && (
+        <div style={{
+          padding: "10px 12px",
+          background: "#FFF3E0",
+          borderRadius: 8,
+          marginBottom: 12,
+        }}>
+          <div style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            marginBottom: 6,
+          }}>
+            <span style={{ fontSize: 13, fontWeight: 600, color: "#E65100" }}>
+              {crnData.crns.length} CRNs saved
+            </span>
+            <button
+              onClick={() => storage.remove("savedCRNs")}
+              style={{
+                background: "none",
+                border: "none",
+                color: "#999",
+                fontSize: 11,
+                cursor: "pointer",
+                textDecoration: "underline",
+              }}>
+              Clear
+            </button>
+          </div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
+            {crnData.crns.map((crn) => (
+              <span
+                key={crn}
+                style={{
+                  padding: "2px 8px",
+                  background: "#FFE0B2",
+                  borderRadius: 4,
+                  fontSize: 11,
+                  fontWeight: 600,
+                  color: "#E65100",
+                  fontFamily: "monospace",
+                }}>
+                {crn}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
 
       <p style={{ fontSize: 13, color: "#555", lineHeight: 1.5, marginBottom: 16 }}>
         Automatically shows Rate My Professors ratings and Grade Distribution on TTU Schedule Builder.
