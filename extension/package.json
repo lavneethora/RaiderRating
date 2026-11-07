@@ -29,6 +29,7 @@
     ],
     "host_permissions": [
       "https://schedulebuilder.ttu.edu/*",
+      "https://registration.texastech.edu/*",
       "https://proflens-api-production.up.railway.app/*"
     ]
   }
