@@ -2,6 +2,7 @@ import type { PlasmoCSConfig } from "plasmo"
 import { sendToBackground } from "@plasmohq/messaging"
 import { Storage } from "@plasmohq/storage"
 import { isValidProfessorName } from "~lib/name-parser"
+import { saveCRNs, clearCRNs } from "~lib/crn-storage"
 import type {
   ProfessorRating,
   BatchLookupResponse,
@@ -605,5 +606,45 @@ storage.watch({
     }
   }
 })
+
+// CRN extraction: finds the space-separated CRN list at the bottom of the schedule
+// and saves it to chrome.storage for the RaiderLink registration content script.
+const CRN_PATTERN = /^\d{5}(\s+\d{5})*$/
+
+function extractAndSaveCRNs() {
+  const inputs = document.querySelectorAll<HTMLInputElement>("input[type='text'], input:not([type])")
+  for (const input of inputs) {
+    const val = input.value.trim()
+    if (CRN_PATTERN.test(val)) {
+      const crns = val.split(/\s+/)
+      saveCRNs(crns)
+      if (DEBUG) console.log("[RaiderRating] Saved CRNs:", crns)
+      return
+    }
+  }
+  const allText = document.querySelectorAll("span, div, td, p")
+  for (const node of allText) {
+    if (node.children.length > 0) continue
+    const text = (node.textContent || "").trim()
+    if (CRN_PATTERN.test(text)) {
+      const crns = text.split(/\s+/)
+      saveCRNs(crns)
+      if (DEBUG) console.log("[RaiderRating] Saved CRNs:", crns)
+      return
+    }
+  }
+  clearCRNs()
+}
+
+let crnDebounceTimer: ReturnType<typeof setTimeout> | null = null
+
+function debouncedExtractCRNs() {
+  if (crnDebounceTimer) clearTimeout(crnDebounceTimer)
+  crnDebounceTimer = setTimeout(extractAndSaveCRNs, 600)
+}
+
+const crnObserver = new MutationObserver(debouncedExtractCRNs)
+crnObserver.observe(document.body, { childList: true, subtree: true, characterData: true })
+debouncedExtractCRNs()
 
 if (DEBUG) console.log("[RaiderRating] Content script loaded, watching for professor names...")
