@@ -49,7 +49,7 @@ function findCRNInputs(): HTMLInputElement[] {
   const allInputs = document.querySelectorAll<HTMLInputElement>("input[type='text'], input:not([type])")
   const crnInputs: HTMLInputElement[] = []
   for (const input of allInputs) {
-    const label = document.querySelector<HTMLLabelElement>(`label[for="${input.id}"]`)
+    const label = input.labels?.[0]
     if (label && /crn/i.test(label.textContent || "")) {
       crnInputs.push(input)
       continue
@@ -83,16 +83,21 @@ function waitForNewInput(currentCount: number): Promise<HTMLInputElement> {
   return new Promise((resolve, reject) => {
     let elapsed = 0
     const interval = setInterval(() => {
-      const inputs = findCRNInputs()
-      if (inputs.length > currentCount) {
-        clearInterval(interval)
-        resolve(inputs[inputs.length - 1])
-        return
-      }
       elapsed += 100
       if (elapsed > 3000) {
         clearInterval(interval)
         reject(new Error("Timed out waiting for new CRN input"))
+        return
+      }
+      try {
+        const inputs = findCRNInputs()
+        if (inputs.length > currentCount) {
+          clearInterval(interval)
+          resolve(inputs[inputs.length - 1])
+        }
+      } catch {
+        clearInterval(interval)
+        reject(new Error("Error finding CRN inputs"))
       }
     }, 100)
   })
