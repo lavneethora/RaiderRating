@@ -607,37 +607,24 @@ storage.watch({
   }
 })
 
-// CRN extraction: triggered by the popup via chrome.runtime.onMessage.
-// Looks for the CRN text box near the cart icon at the bottom of Schedule Builder.
-const CRN_PATTERN = /\b\d{5}\b/g
-
+// CRN extraction: only reads from the cart text box at the bottom of the schedule.
+// Finds it by locating the "Copy/paste CRNs" tooltip text and grabbing the nearby input.
 function extractCRNs(): string[] {
-  const inputs = document.querySelectorAll<HTMLInputElement>("input[type='text'], input:not([type])")
-  for (const input of inputs) {
-    const val = input.value.trim()
-    const matches = val.match(CRN_PATTERN)
-    if (matches && matches.length >= 1) {
-      const parent = input.parentElement
-      if (parent) {
-        const nearby = parent.innerHTML.toLowerCase()
-        if (nearby.includes("cart") || nearby.includes("crn") || nearby.includes("registration")) {
-          return matches
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT)
+  while (walker.nextNode()) {
+    const text = (walker.currentNode.textContent || "").trim()
+    if (/copy.*paste.*crn/i.test(text)) {
+      let parent = walker.currentNode.parentElement
+      for (let i = 0; i < 10 && parent; i++) {
+        const input = parent.querySelector<HTMLInputElement>("input")
+        if (input) {
+          const val = input.value.trim()
+          if (!val) return []
+          const matches = val.match(/\b\d{5}\b/g)
+          return matches || []
         }
+        parent = parent.parentElement
       }
-      const tooltip = input.title || input.getAttribute("aria-label") || ""
-      if (/crn|registration|raiderlink/i.test(tooltip)) {
-        return matches
-      }
-    }
-  }
-  const allText = document.querySelectorAll("span, div, td, p, label")
-  for (const node of allText) {
-    const text = (node.textContent || "").trim()
-    const matches = text.match(CRN_PATTERN)
-    if (!matches || matches.length < 1) continue
-    const allDigits = text.replace(/\s+/g, "").match(/^\d+$/)
-    if (allDigits && matches.length >= 1) {
-      return matches
     }
   }
   return []
