@@ -607,44 +607,52 @@ storage.watch({
   }
 })
 
-// CRN extraction: finds the space-separated CRN list at the bottom of the schedule
-// and saves it to chrome.storage for the RaiderLink registration content script.
-const CRN_PATTERN = /^\d{5}(\s+\d{5})*$/
+// CRN extraction: triggered by the popup via chrome.runtime.onMessage.
+// Looks for the CRN text box near the cart icon at the bottom of Schedule Builder.
+const CRN_PATTERN = /\b\d{5}\b/g
 
-function extractAndSaveCRNs() {
+function extractCRNs(): string[] {
   const inputs = document.querySelectorAll<HTMLInputElement>("input[type='text'], input:not([type])")
   for (const input of inputs) {
     const val = input.value.trim()
-    if (CRN_PATTERN.test(val)) {
-      const crns = val.split(/\s+/)
-      saveCRNs(crns)
-      if (DEBUG) console.log("[RaiderRating] Saved CRNs:", crns)
-      return
+    const matches = val.match(CRN_PATTERN)
+    if (matches && matches.length >= 1) {
+      const parent = input.parentElement
+      if (parent) {
+        const nearby = parent.innerHTML.toLowerCase()
+        if (nearby.includes("cart") || nearby.includes("crn") || nearby.includes("registration")) {
+          return matches
+        }
+      }
+      const tooltip = input.title || input.getAttribute("aria-label") || ""
+      if (/crn|registration|raiderlink/i.test(tooltip)) {
+        return matches
+      }
     }
   }
-  const allText = document.querySelectorAll("span, div, td, p")
+  const allText = document.querySelectorAll("span, div, td, p, label")
   for (const node of allText) {
-    if (node.children.length > 0) continue
     const text = (node.textContent || "").trim()
-    if (CRN_PATTERN.test(text)) {
-      const crns = text.split(/\s+/)
-      saveCRNs(crns)
-      if (DEBUG) console.log("[RaiderRating] Saved CRNs:", crns)
-      return
+    const matches = text.match(CRN_PATTERN)
+    if (!matches || matches.length < 1) continue
+    const allDigits = text.replace(/\s+/g, "").match(/^\d+$/)
+    if (allDigits && matches.length >= 1) {
+      return matches
     }
   }
-  clearCRNs()
+  return []
 }
 
-let crnDebounceTimer: ReturnType<typeof setTimeout> | null = null
-
-function debouncedExtractCRNs() {
-  if (crnDebounceTimer) clearTimeout(crnDebounceTimer)
-  crnDebounceTimer = setTimeout(extractAndSaveCRNs, 600)
-}
-
-const crnObserver = new MutationObserver(debouncedExtractCRNs)
-crnObserver.observe(document.body, { childList: true, subtree: true, characterData: true })
-debouncedExtractCRNs()
+chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
+  if (msg.type === "extractCRNs") {
+    const crns = extractCRNs()
+    if (crns.length > 0) {
+      saveCRNs(crns).then(() => sendResponse({ success: true, crns }))
+    } else {
+      sendResponse({ success: false, crns: [] })
+    }
+    return true
+  }
+})
 
 if (DEBUG) console.log("[RaiderRating] Content script loaded, watching for professor names...")
