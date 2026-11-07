@@ -1,44 +1,8 @@
 import type { PlasmoCSConfig } from "plasmo"
-import { Storage } from "@plasmohq/storage"
-import { getSavedCRNs } from "~lib/crn-storage"
-
-const storage = new Storage()
 
 export const config: PlasmoCSConfig = {
   matches: ["https://registration.texastech.edu/*"],
   run_at: "document_idle",
-}
-
-const BUTTON_ID = "raiderrating-crn-fill"
-
-function createFillButton(count: number): HTMLButtonElement {
-  const btn = document.createElement("button")
-  btn.id = BUTTON_ID
-  btn.type = "button"
-  btn.textContent = `Fill ${count} CRNs from Schedule Builder`
-  Object.assign(btn.style, {
-    position: "fixed",
-    bottom: "20px",
-    right: "20px",
-    zIndex: "999999",
-    padding: "12px 20px",
-    background: "#CC0000",
-    color: "#fff",
-    border: "none",
-    borderRadius: "8px",
-    fontSize: "14px",
-    fontWeight: "600",
-    fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif",
-    cursor: "pointer",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
-  })
-  btn.addEventListener("mouseenter", () => {
-    btn.style.background = "#a00000"
-  })
-  btn.addEventListener("mouseleave", () => {
-    if (!btn.disabled) btn.style.background = "#CC0000"
-  })
-  return btn
 }
 
 function findCRNInputs(): HTMLInputElement[] {
@@ -72,11 +36,45 @@ function findAddButton(): HTMLElement | null {
   return null
 }
 
+function clickEnterCRNsTab(): boolean {
+  const tabs = document.querySelectorAll("a, button, li, span")
+  for (const el of tabs) {
+    if (/^\s*enter\s+crns?\s*$/i.test(el.textContent || "")) {
+      ;(el as HTMLElement).click()
+      return true
+    }
+  }
+  return false
+}
+
 function fillInput(input: HTMLInputElement, value: string) {
   input.value = value
   input.dispatchEvent(new Event("input", { bubbles: true }))
   input.dispatchEvent(new Event("change", { bubbles: true }))
   input.dispatchEvent(new Event("blur", { bubbles: true }))
+}
+
+function waitForElement(finder: () => HTMLElement | null, timeoutMs = 3000): Promise<HTMLElement> {
+  return new Promise((resolve, reject) => {
+    const existing = finder()
+    if (existing) { resolve(existing); return }
+    let elapsed = 0
+    const interval = setInterval(() => {
+      elapsed += 100
+      if (elapsed > timeoutMs) {
+        clearInterval(interval)
+        reject(new Error("Timed out"))
+        return
+      }
+      try {
+        const el = finder()
+        if (el) { clearInterval(interval); resolve(el) }
+      } catch {
+        clearInterval(interval)
+        reject(new Error("Error finding element"))
+      }
+    }, 100)
+  })
 }
 
 function waitForNewInput(currentCount: number): Promise<HTMLInputElement> {
@@ -103,66 +101,45 @@ function waitForNewInput(currentCount: number): Promise<HTMLInputElement> {
   })
 }
 
-async function fillAllCRNs(crns: string[], btn: HTMLButtonElement) {
-  btn.disabled = true
-  btn.style.background = "#999"
-  btn.textContent = "Filling..."
-  btn.style.cursor = "default"
+async function fillAllCRNs(crns: string[]): Promise<{ success: boolean; filled: number; error?: string }> {
+  clickEnterCRNsTab()
 
   try {
-    const existingInputs = findCRNInputs()
-    if (existingInputs.length === 0) {
-      btn.textContent = "Could not find CRN inputs"
-      btn.style.background = "#F44336"
-      return
-    }
+    await waitForElement(() => findCRNInputs()[0] || null, 3000)
+  } catch {
+    return { success: false, filled: 0, error: "Could not find CRN inputs" }
+  }
 
-    fillInput(existingInputs[0], crns[0])
+  try {
+    const firstInput = findCRNInputs()[0]
+    fillInput(firstInput, crns[0])
+    let filled = 1
 
     for (let i = 1; i < crns.length; i++) {
       const addBtn = findAddButton()
       if (!addBtn) {
-        btn.textContent = `Filled ${i}/${crns.length} (could not find Add button)`
-        btn.style.background = "#FF9800"
-        return
+        return { success: false, filled, error: "Could not find Add Another CRN button" }
       }
       const countBefore = findCRNInputs().length
       addBtn.click()
       try {
         const newInput = await waitForNewInput(countBefore)
         fillInput(newInput, crns[i])
+        filled++
       } catch {
-        btn.textContent = `Filled ${i}/${crns.length} (timed out)`
-        btn.style.background = "#FF9800"
-        return
+        return { success: false, filled, error: `Timed out adding CRN ${i + 1}` }
       }
     }
 
-    btn.textContent = `Filled ${crns.length} CRNs`
-    btn.style.background = "#4CAF50"
+    return { success: true, filled }
   } catch (err) {
-    btn.textContent = "Error filling CRNs"
-    btn.style.background = "#F44336"
-    console.error("[RaiderRating] CRN fill error:", err)
+    return { success: false, filled: 0, error: String(err) }
   }
 }
 
-async function init() {
-  const data = await getSavedCRNs()
-  if (!data || data.crns.length === 0) return
-
-  const existing = document.getElementById(BUTTON_ID)
-  if (existing) existing.remove()
-
-  const btn = createFillButton(data.crns.length)
-  btn.addEventListener("click", () => fillAllCRNs(data.crns, btn))
-  document.body.appendChild(btn)
-}
-
-init()
-
-storage.watch({
-  savedCRNs: () => {
-    init()
-  },
+chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
+  if (msg.type === "fillCRNs" && Array.isArray(msg.crns)) {
+    fillAllCRNs(msg.crns).then(sendResponse)
+    return true
+  }
 })
