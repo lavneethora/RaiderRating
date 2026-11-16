@@ -21,37 +21,41 @@
 </head>
 <body>
   <h1>RaiderRating Privacy Policy</h1>
-  <p class="date">Last updated: May 12, 2026</p>
+  <p class="date">Last updated: November 16, 2026</p>
 
   <h2>Overview</h2>
-  <p>RaiderRating is a Chrome extension that displays Rate My Professors ratings on the Texas Tech University Schedule Builder. We are committed to protecting your privacy.</p>
+  <p>RaiderRating is a Chrome extension for Texas Tech University students. It shows Rate My Professors ratings and grade distributions on the TTU Schedule Builder, and it can copy the CRNs from your schedule into the CRN boxes on the registration page. This page explains what it reads, stores, and sends.</p>
 
-  <h2>Data Collection</h2>
-  <p>RaiderRating does <strong>not</strong> collect, store, or transmit any personal information. Specifically, we do not collect:</p>
+  <h2>What We Never Collect</h2>
   <ul>
-    <li>Names, email addresses, or any personally identifiable information</li>
-    <li>Browsing history or web activity</li>
-    <li>Authentication credentials or login information</li>
-    <li>Location data</li>
-    <li>Financial information</li>
+    <li>Passwords, eRaider credentials, or any login information</li>
+    <li>Your name, student ID, or R number</li>
+    <li>Your grades or registration history</li>
+    <li>Browsing history or activity on other websites</li>
+    <li>Location or financial information</li>
   </ul>
+  <p>We do not use analytics, tracking, or advertising services.</p>
 
-  <h2>How the Extension Works</h2>
-  <p>When you visit the TTU Schedule Builder, the extension reads professor names displayed on the page and sends those names to our backend API to retrieve publicly available ratings from Rate My Professors. No user data is sent — only professor names that are already visible on the page.</p>
+  <h2>Ratings and Grade Data</h2>
+  <p>On the TTU Schedule Builder, the extension reads the professor names and course codes shown on the page and sends them to our server to look up publicly available ratings and grade distributions. These requests do not include your name, ID, or account.</p>
 
-  <h2>Local Storage</h2>
-  <p>The extension stores a single preference locally on your device (whether ratings are enabled or disabled). This data never leaves your browser.</p>
+  <h2>Copy and Paste Schedule</h2>
+  <p>When you click Copy Schedule, the extension reads the CRNs in your Schedule Builder cart and saves them in Chrome's extension storage. When you click Paste Schedule on the registration page, it types those CRNs into the CRN boxes. It never clicks Add to Summary, never submits a form, and never registers, adds, or drops a class. The saved CRNs are never sent to our server. They stay saved until you click Clear or copy a new schedule.</p>
 
-  <h2>Third-Party Services</h2>
-  <p>The extension communicates with our API server to fetch professor ratings. The API server queries Rate My Professors' publicly available data. No user information is shared with any third party.</p>
+  <h2>Storage on Your Device</h2>
+  <p>The extension stores two things in Chrome's extension storage: whether ratings are turned on, and the CRNs you copied. If you have Chrome sync turned on, Chrome may sync this storage across your own signed-in devices through your Google account. We never receive it.</p>
 
-  <h2>Data Sharing</h2>
-  <p>We do not sell, trade, or transfer any data to third parties. We do not use analytics, tracking, or advertising services.</p>
+  <h2>Feedback Form</h2>
+  <p>If you choose to send a message through Contact Us, the subject, message, and email address you type are sent to our server and delivered to the developer by email. We use them only to read and reply to your message. We do not store them in a database or add you to any list.</p>
+
+  <h2>Server and Third-Party Services</h2>
+  <p>Our server is hosted on Railway. Like any website, it sees the IP address of each request. We use it briefly in memory to limit abuse and do not save it. Our own logs record only the path and status of each request. Railway may keep standard request logs as part of hosting.</p>
+  <p>Professor ratings come from Rate My Professors' publicly available data. Feedback emails are delivered through Resend. We do not sell, trade, or share your information with anyone else.</p>
 
   <h2>Changes to This Policy</h2>
   <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated date.</p>
 
   <h2>Contact</h2>
-  <p>If you have questions about this privacy policy, please open an issue on our <a href="https://github.com/lavneethora/proflens">GitHub repository</a>.</p>
+  <p>Questions? Use Contact Us in the extension, or open an issue on our <a href="https://github.com/lavneethora/RaiderRating">GitHub repository</a>.</p>
 </body>
 </html>
