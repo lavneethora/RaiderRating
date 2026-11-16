@@ -3,6 +3,7 @@ import express from 'express'
 import cors from 'cors'
 import rateLimit from 'express-rate-limit'
 import { requestLogger } from './utils/logger'
+import { clientKey } from './utils/clientKey'
 import professorRoutes from './routes/professors'
 import gradeRoutes from './routes/grades'
 import feedbackRoutes from './routes/feedback'
@@ -20,18 +21,11 @@ app.use(rateLimit({
   max: 60,
   standardHeaders: true,
   legacyHeaders: false,
+  keyGenerator: clientKey,
 }))
 
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() })
-})
-
-app.get('/api/whoami', (req, res) => {
-  res.json({
-    ip: req.ip ?? null,
-    realIp: req.headers['x-real-ip'] ?? null,
-    forwardedFor: req.headers['x-forwarded-for'] ?? null,
-  })
 })
 
 app.use('/api/professors', professorRoutes)
