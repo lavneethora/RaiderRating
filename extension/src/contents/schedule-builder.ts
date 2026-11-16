@@ -20,6 +20,7 @@ export const config: PlasmoCSConfig = {
 const DEBUG = process.env.NODE_ENV === "development"
 const BADGE_ATTR = "data-proflens"
 const PROCESSED_ATTR = "data-proflens-processed"
+const RMP_ORIGIN = "https://www.ratemyprofessors.com/"
 
 function getRatingColor(rating: number): string {
   if (rating >= 4.0) return "#4CAF50"
@@ -185,7 +186,10 @@ function showTooltip(
   tooltip.appendChild(statsGrid)
 
   const link = document.createElement("a")
-  link.href = prof.rmpUrl
+  link.href =
+    typeof prof.rmpUrl === "string" && prof.rmpUrl.startsWith(RMP_ORIGIN)
+      ? prof.rmpUrl
+      : RMP_ORIGIN
   link.target = "_blank"
   link.rel = "noopener"
   link.textContent = "View on Rate My Professors"
