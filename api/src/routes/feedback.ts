@@ -2,6 +2,7 @@ import { Router } from 'express'
 import rateLimit from 'express-rate-limit'
 import { z } from 'zod/v4'
 import { sendFeedbackEmail } from '../services/feedback'
+import { clientKey } from '../utils/clientKey'
 
 const router = Router()
 
@@ -10,6 +11,7 @@ const feedbackLimiter = rateLimit({
   max: 3,
   standardHeaders: true,
   legacyHeaders: false,
+  keyGenerator: clientKey,
   message: { error: 'Too many feedback submissions. Please try again later.' },
 })
 
