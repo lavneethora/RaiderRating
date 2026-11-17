@@ -6,9 +6,10 @@ import { clientKey } from '../utils/clientKey'
 
 const router = Router()
 
+// Shared across everyone behind one campus address, so this is not per student.
 const feedbackLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 3,
+  max: 10,
   standardHeaders: true,
   legacyHeaders: false,
   keyGenerator: clientKey,
