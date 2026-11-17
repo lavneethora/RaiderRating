@@ -16,9 +16,11 @@ app.use(cors({ origin: process.env.CORS_ORIGIN || '*' }))
 app.use(express.json({ limit: '10kb' }))
 app.use(requestLogger)
 
+// Campus wifi puts many students behind one public address, so this cap is shared
+// across all of them during registration rush.
 app.use(rateLimit({
   windowMs: 60 * 1000,
-  max: 60,
+  max: 600,
   standardHeaders: true,
   legacyHeaders: false,
   keyGenerator: clientKey,
