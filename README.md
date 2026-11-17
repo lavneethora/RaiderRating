@@ -1,8 +1,8 @@
 # RaiderRating
 
-A Chrome extension that overlays Rate My Professors ratings **and** TTU grade distributions onto the Texas Tech Visual Schedule Builder.
+A Chrome extension that overlays Rate My Professors ratings **and** TTU grade distributions onto the Texas Tech Visual Schedule Builder, then carries your CRNs across to RaiderLink registration.
 
-No more switching tabs during registration — see professor ratings, difficulty scores, "would take again" percentages, and the actual A/B/C/D/F/W breakdown for each course right next to the professor's name.
+No more switching tabs during registration. See professor ratings, difficulty scores, "would take again" percentages, and the actual A/B/C/D/F/W breakdown for each course right next to the professor's name.
 
 ## Install
 
@@ -32,9 +32,20 @@ When grade data is available for that **specific professor + course combination*
 - A combined A/B/C/D/F/W breakdown across all available semesters
 - A per-semester breakdown for the four most recent terms
 
-If grade data isn't available for that combination, the button simply isn't shown — the popup looks exactly like the original ratings-only version.
+If grade data isn't available for that combination, the button simply isn't shown. The popup looks exactly like the original ratings-only version.
 
 > **Note:** Grade distribution data currently covers most undergraduate courses. Graduate-level courses will be added in a future update.
+
+### Copy and paste schedule
+
+Once your schedule is built, the extension can carry the CRNs over to registration instead of you retyping them:
+
+1. On Schedule Builder, open the extension popup and click **Copy Schedule**. The CRNs are read from the cart box and saved in extension storage.
+2. Go to RaiderLink registration and open the popup again, then click **Paste Schedule**.
+3. The extension switches to the **Enter CRNs** tab and types each CRN into its own box, adding rows as needed.
+4. Review the courses it filled in and register yourself.
+
+The extension only types into the CRN boxes. It never clicks **Add to Summary**, never submits a form, and never adds or drops a class. Saved CRNs never leave the browser and can be cleared from the popup.
 
 ## Project Structure
 
@@ -48,8 +59,9 @@ RaiderRating/
 ### Backend (`api/`)
 
 - **Stack:** Node.js, Express, TypeScript, Zod
-- `GET /api/professors/lookup` & `POST /api/professors/batch` — Rate My Professors data (via their GraphQL API)
-- `GET /api/grades/lookup` & `POST /api/grades/batch` — TTU grade distributions (loaded from a pre-built JSON file at startup)
+- `GET /api/professors/lookup` & `POST /api/professors/batch`: Rate My Professors data (via their GraphQL API)
+- `GET /api/grades/lookup` & `POST /api/grades/batch`: TTU grade distributions (loaded from a pre-built JSON file at startup)
+- `POST /api/feedback`: delivers messages from the in-extension form by email
 - In-memory rating cache (24h TTL for found, 6h for not-found)
 - Rate limiting, input validation, CORS
 - Deployed on Railway
@@ -61,12 +73,13 @@ RaiderRating/
 - Walks the DOM upward from each name to extract the surrounding course code
 - Sends parallel batch lookups for ratings + grades
 - Injects color-coded rating badges inline
-- Click a badge → popup with rating details, RMP link, and (when available) grade distribution
+- Click a badge for a popup with rating details, RMP link, and (when available) grade distribution
+- Separate content script on `registration.texastech.edu` fills saved CRNs into the registration form
 - Toggle the whole thing on/off from the extension popup
 
 ## Privacy
 
-RaiderRating does not collect any personal data. It only reads professor names already displayed on the schedule builder page, then fetches publicly available ratings and aggregate grade distributions. See our [Privacy Policy](https://lavneethora.github.io/RaiderRating/privacy-policy.html).
+RaiderRating never reads passwords, eRaider credentials, student IDs, or grades. It reads the professor names and course codes already displayed on the schedule builder page, then fetches publicly available ratings and aggregate grade distributions. CRNs are read only when you click **Copy Schedule** and stay in your browser. If you send a message through the feedback form, the email address you type is used only to reply. See our [Privacy Policy](https://lavneethora.github.io/RaiderRating/privacy-policy.html).
 
 ## License
 
