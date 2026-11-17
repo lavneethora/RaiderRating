@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import { timingSafeEqual } from 'node:crypto'
+import { createHash, timingSafeEqual } from 'node:crypto'
 import express from 'express'
 import cors from 'cors'
 import rateLimit from 'express-rate-limit'
@@ -45,10 +45,11 @@ const adminLimiter = rateLimit({
   keyGenerator: clientKey,
 })
 
+// Hashing first keeps both sides 32 bytes, so the comparison reveals nothing about key length.
 function matchesAdminKey(provided: string, expected: string): boolean {
-  const a = Buffer.from(provided)
-  const b = Buffer.from(expected)
-  return a.length === b.length && timingSafeEqual(a, b)
+  const a = createHash('sha256').update(provided, 'utf8').digest()
+  const b = createHash('sha256').update(expected, 'utf8').digest()
+  return timingSafeEqual(a, b)
 }
 
 function requireAdminKey(req: import('express').Request, res: import('express').Response, next: import('express').NextFunction) {
